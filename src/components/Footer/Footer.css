@@ -1,0 +1,38 @@
+.footer {
+  background-color: #f8f2ef;
+  padding: 30px 20px;
+  text-align: center;
+  border-top: 2px solid #dcb1a3;
+  font-family: 'Segoe UI', sans-serif;
+  color: #4d3c3c;
+}
+
+.navSection {
+  margin-bottom: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.navSection a {
+  color: #7d4c3b;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navSection a:hover {
+  color: #c86c54;
+}
+
+.message {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.copy {
+  font-size: 0.85rem;
+  color: #6e5c5c;
+}
