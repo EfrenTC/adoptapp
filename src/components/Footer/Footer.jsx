@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import './Footer.css'; 
 
 
+
 const Footer = () => {
   return (
     <footer className="footer">
@@ -18,7 +19,7 @@ const Footer = () => {
       </div>
 
       <div className="copy">
-        <p>&copy; {new Date().getFullYear()} Adopta un Gatito · Todos los derechos reservados</p>
+        <p>&copy; {new Date().getFullYear()} Adoptapp · Todos los derechos reservados</p>
       </div>
     </footer>
   );

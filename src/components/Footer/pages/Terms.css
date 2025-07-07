@@ -1,0 +1,33 @@
+.terms-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  color: #4b4b4b;
+  background-color: #fff9f5;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(200, 150, 120, 0.15);
+}
+
+.terms-container h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #7d4c3b;
+}
+
+.terms-container h2 {
+  font-size: 1.3rem;
+  margin-top: 1.8rem;
+  color: #c86c54;
+}
+
+.terms-container p {
+  font-size: 1rem;
+  margin: 0.8rem 0;
+}
+
+.terms-container em {
+  font-size: 0.9rem;
+  color: #7a6e6e;
+}
