@@ -1,24 +1,31 @@
 .work-container {
-  max-width: 600px;
-  margin: 2rem auto;
-  padding: 2rem;
-  background-color: #fff9f5;
-  border-radius: 8px;
-  box-shadow: 0 0 12px rgba(200, 150, 120, 0.2);
+  background-color: #e1e9ec; 
+  min-height: calc(95vh - 100px); 
+  padding: 3rem 1rem;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  max-width: 1200px;
+  margin: 0 auto; 
   font-family: 'Segoe UI', sans-serif;
-  color: #4b4b4b;
+  color: #2B2D57; 
 }
 
 .work-container h1 {
-  color: #7d4c3b;
-  margin-bottom: 0.5rem;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #2B2D57;
   text-align: center;
 }
 
 .work-container p {
   text-align: center;
-  margin-bottom: 1.5rem;
-  font-size: 1rem;
+  margin-bottom: 3rem;
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #2B2D57;
+  line-height: 1.6;
 }
 
 .success-message {
@@ -26,47 +33,54 @@
   color: #155724;
   padding: 10px;
   margin-bottom: 1rem;
-  border-radius: 5px;
+  border-radius: 8px;
   text-align: center;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.06);
 }
 
 .work-form label {
   display: block;
   margin-bottom: 1rem;
   font-weight: 600;
+  color: #2B2D57;
 }
 
 .work-form input,
 .work-form textarea {
   width: 100%;
-  padding: 8px 10px;
+  padding: 1rem 1.5rem;
   margin-top: 5px;
-  border: 1.5px solid #dcb1a3;
-  border-radius: 6px;
+  border: 1.5px solid #2B2D57; 
+  border-radius: 12px; 
   font-size: 1rem;
   font-family: 'Segoe UI', sans-serif;
   transition: border-color 0.3s ease;
+  box-sizing: border-box;
 }
 
 .work-form input:focus,
 .work-form textarea:focus {
-  border-color: #c86c54;
+  border-color: #c86c54; 
   outline: none;
 }
 
 .work-form button {
-  background-color: #c86c54;
+  background-color: #2B2D57;
   color: white;
   border: none;
   padding: 12px 20px;
-  border-radius: 6px;
+  border-radius: 12px;
   font-size: 1.1rem;
   cursor: pointer;
   width: 100%;
   margin-top: 1rem;
   transition: background-color 0.3s ease;
+  font-weight: 600;
 }
 
 .work-form button:hover {
-  background-color: #a8543f;
+  background-color: #1f2143; 
 }

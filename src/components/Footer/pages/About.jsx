@@ -1,37 +1,41 @@
 import React from 'react';
-import './About.css'; // Asegúrate de crear este archivo si quieres añadir estilos personalizados
+import './About.css';
 
 const About = () => {
   return (
     <main className="about-container">
-      <h1>Quiénes somos</h1>
-      <p className="intro">Somos un equipo comprometido con el desarrollo web y el bienestar animal. Conoce a las personas detrás de esta iniciativa:</p>
+      <div className="about-content">
+        <h1>Quiénes somos</h1>
+        <p className="intro">
+          Somos un equipo multidisciplinar que combina pasión por el desarrollo web y el amor por los animales.
+        </p>
 
-      <section className="cards-container">
+        <section className="cards-grid">
+          <article className="team-card">
+            <img src="/img/ivan.jpg" alt="Iván" className="profile-pic" />
+            <h2>Iván</h2>
+            <p>Especialista en backend con Laravel, Node.js y MySQL. Le encanta automatizar procesos y asegurar una buena arquitectura de código.</p>
+          </article>
 
-        <article className="team-card">
-          <h2>Iván</h2>
-          <p>Desarrollador web apasionado por la lógica y la estructura del código. Le encanta trabajar en equipo y proponer soluciones técnicas eficientes. Es quien más se pelea con el Git 😅.</p>
-        </article>
+          <article className="team-card">
+            <img src="/img/vanderlene.jpg" alt="Vanderlene" className="profile-pic" />
+            <h2>Vanderlene</h2>
+            <p>Diseñadora UI/UX y desarrolladora front-end con experiencia en Figma, TailwindCSS y React. Siempre centrada en la experiencia del usuario.</p>
+          </article>
 
-      
-        <article className="team-card">
-          <h2>Vanderlene</h2>
-          <p>Creativa y detallista, destaca por su enfoque en el diseño visual y la experiencia de usuario. Siempre aporta calidez al equipo y asegura que todo quede bonito y funcional. 💖</p>
-        </article>
+          <article className="team-card">
+            <img src="/img/milca.jpg" alt="Milca" className="profile-pic" />
+            <h2>Milca</h2>
+            <p>Gestora de proyectos y QA. Se asegura de que todo funcione con metodologías ágiles, testeo manual y automatizado. Usa Jira, Trello y Postman.</p>
+          </article>
 
-       
-        <article className="team-card">
-          <h2>Milca</h2>
-          <p>Muy organizada, siempre pendiente de que el trabajo esté bien repartido. Le encanta darle sentido y coherencia a cada sección del proyecto. Gran compañera y excelente comunicadora. ✨</p>
-        </article>
-
-       
-        <article className="team-card">
-          <h2>Efren</h2>
-          <p>Programador tranquilo y resolutivo, siempre aporta ideas útiles y mantiene la calma incluso en los commits más tensos. Se encarga de pulir detalles con buena lógica. 💻</p>
-        </article>
-      </section>
+          <article className="team-card">
+            <img src="/img/efren.jpg" alt="Efren" className="profile-pic" />
+            <h2>Efren</h2>
+            <p>Fullstack con experiencia en Angular, Spring Boot y PostgreSQL. Tranquilo y resolutivo, experto en depurar y optimizar código.</p>
+          </article>
+        </section>
+      </div>
     </main>
   );
 };
