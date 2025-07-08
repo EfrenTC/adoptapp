@@ -4,8 +4,11 @@ import About from './components/Footer/pages/About';
 import Privacy from './components/Footer/pages/Privacy';
 import Terms from './components/Footer/pages/Terms';
 import WorkWithUs from './components/Footer/pages/WorkWithUs';
+import './App.css'
+import Api from './services/Api'
 
 function App() {
+
   return (
     <>
       <Routes>
@@ -16,6 +19,7 @@ function App() {
       </Routes>
 
       <Footer />
+
     </>
   );
 }
