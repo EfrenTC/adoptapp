@@ -1,9 +1,9 @@
 import {Routes, Route} from 'react-router-dom';
-import Footer from './components/Footer/Footer';
-import About from './components/Footer/pages/About';
-import Privacy from './components/Footer/pages/Privacy';
-import Terms from './components/Footer/pages/Terms';
-import WorkWithUs from './components/Footer/pages/WorkWIthUs';
+import Footer from '../components/Footer/Footer';
+import About from '../components/Footer/pages/About';
+import Privacy from '../components/Footer/pages/Privacy';
+import Terms from '../components/Footer/pages/Terms';
+import WorkWithUs from '../components/Footer/pages/WorkWIthUs';
 
 export default function AppRoutes() {
     return (
