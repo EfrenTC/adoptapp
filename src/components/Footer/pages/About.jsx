@@ -24,13 +24,13 @@ const About = () => {
           </article>
 
           <article className="team-card">
-            <img src="/img/milca.jpg" alt="Milca" className="profile-pic" />
+            <img src="src\assets\Milca.jpg" alt="Milca" className="profile-pic" />
             <h2>Milca</h2>
             <p>Gestora de proyectos y QA. Se asegura de que todo funcione con metodologías ágiles, testeo manual y automatizado. Usa Jira, Trello y Postman.</p>
           </article>
 
           <article className="team-card">
-            <img src="/img/efren.jpg" alt="Efren" className="profile-pic" />
+            <img src="src\assets\Efren.jpg" alt="Efren" className="profile-pic" />
             <h2>Efren</h2>
             <p>Fullstack con experiencia en Angular, Spring Boot y PostgreSQL. Tranquilo y resolutivo, experto en depurar y optimizar código.</p>
           </article>
