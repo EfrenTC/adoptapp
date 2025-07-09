@@ -1,0 +1,63 @@
+.header {
+    background-color: #B3D7E5;
+    color: #0e1f35;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    height: 50px;
+}
+
+.brand {
+    font-size: 18px;
+    font-weight: bold;
+    color: #0e1f35;
+    }
+
+    .nav-links {
+        display: flex;
+        gap: 20px;
+    }
+
+    .nav-links a {
+        padding: 8px 16px;
+        background-color: #dceff6;
+        border-radius: 6px;
+        color: #0e1f35;
+        font-weight: bold;
+        text-decoration: none;
+        box-shadow: 1px 2px 5px rgb(0, 0, 0, 0.1);
+        transition: all 0.2s ease-in-out;
+    }
+
+    .nav-links a:hover {
+        background-color: #c5e4f0;
+        transform: translateY(-2px);
+    }
+
+    .donar-btn {
+        background-color: #f87171;
+        color: #0e1f35;
+        padding: 10px 20px;
+        border: none;
+        font-weight: bold;
+        border-radius: 6px;
+        cursor: pointer;
+        box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
+        transition: all 0.2 ease-in-out;
+    }
+
+    .donar-btn:hover {
+        background-color: #ef4444;
+        transform: scale(1.05);
+    }
