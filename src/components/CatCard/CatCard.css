@@ -10,9 +10,9 @@
   margin: 10px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   position: relative; /* Añadido para posicionar el corazón */
-  flex-grow: 1;
-  flex-shrink: 1;
-  flex-basis: 250px;
+ justify-content: center;
+  width: 250px;      
+  flex: 0 0 250px;
 }
 
 .heart-container {
