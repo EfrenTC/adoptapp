@@ -8,44 +8,42 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.logo-section {
+.header__logo {
     display: flex;
     align-items: center;
     gap: 10px;
+    }
+
+.header__logo-img {
+    height: 70px;
 }
 
-.logo {
-    height: 50px;
-}
-
-.brand {
+.header__brand {
     font-size: 18px;
     font-weight: bold;
     color: #0e1f35;
     }
 
-    .nav-links {
+    .header__nav {
         display: flex;
         gap: 20px;
     }
 
-    .nav-links a {
+    .header__nav-link {
         padding: 8px 16px;
-        background-color: #dceff6;
-        border-radius: 6px;
         color: #0e1f35;
         font-weight: bold;
         text-decoration: none;
-        box-shadow: 1px 2px 5px rgb(0, 0, 0, 0.1);
         transition: all 0.2s ease-in-out;
+
     }
 
-    .nav-links a:hover {
-        background-color: #c5e4f0;
+    .header__nav-link:hover {
         transform: translateY(-2px);
+        text-decoration: underline;
     }
 
-    .donar-btn {
+    .header__donar-btn {
         background-color: #f87171;
         color: #0e1f35;
         padding: 10px 20px;
@@ -57,7 +55,7 @@
         transition: all 0.2 ease-in-out;
     }
 
-    .donar-btn:hover {
+    .header__donar-btn:hover {
         background-color: #ef4444;
         transform: scale(1.05);
     }

@@ -4,20 +4,20 @@ import logo from "../../assets/logo.png";
 
 const Header = () => {
     return (
-        <Header className="header">
-            <div className="logo-section">
-                <img src={logo} alt="Logo Adoptapp" className="logo" />
-                <span className="brand">Adoptapp</span>
+        <div className="header">
+            <div className="header__logo">
+                <img src={logo} alt="Logo Adoptapp" className="header__logo-img" />
+                <span className="header__brand"></span>
             </div>
-            <nav className="nav-links">
-                <a href="#">Inicio</a>
-                <a href="#">Adopta</a>
-                <a href="#">Consejos</a>
-                <a href="#">Historias</a>
-                <a href="#">Contacto</a>
+            <nav className="header__nav">
+                <a href="#" className="header__nav-link">Inicio</a>
+                <a href="#" className="header__nav-link">Adopta</a>
+                <a href="#" className="header__nav-link">Consejos</a>
+                <a href="#" className="header__nav-link">Historias</a>
+                <a href="#" className="header__nav-link">Contacto</a>
             </nav>
-            <button className="donar-btn">DONÁ</button>
-        </Header>            
+            <button className="header__donar-btn">DONA</button>
+        </div>            
     );
 };
 
