@@ -18,8 +18,6 @@ function App() {
     
     </AppRoutes>
 
-    <Contact></Contact>
-
     <Footer></Footer>
     </>
   );
