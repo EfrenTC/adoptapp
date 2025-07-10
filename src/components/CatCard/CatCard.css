@@ -1,5 +1,5 @@
 .cat-card {
-  width: 250px;
+
   background-color: #B3D7E5;
   border: 1px solid #ddd;
   border-radius: 12px;
@@ -9,6 +9,9 @@
   font-family: Arial, sans-serif;
   margin: 10px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 250px;
 }
 .cards-container {
   display: flex;
@@ -29,6 +32,7 @@
   object-fit: cover;
   display: block;
   border-bottom: 1px solid #ccc;
+  position: relative;
 }
 
 .cat-card h3 {
@@ -60,5 +64,11 @@
   transform: translateY(-2px);
 }
 
+.card-heart {
+  width: 50px;
+  position: relative;
+  top: -100px;
+  overflow: hidden;
 
+}
 
