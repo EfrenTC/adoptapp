@@ -11,11 +11,13 @@ function App() {
 
   return (
     <>
+    
+    <Header></Header>
+
     <AppRoutes>
     
     </AppRoutes>
 
-    
     <Footer></Footer>
 
     </>

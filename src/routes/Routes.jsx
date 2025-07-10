@@ -4,10 +4,12 @@ import About from '../components/Footer/pages/About';
 import Privacy from '../components/Footer/pages/Privacy';
 import Terms from '../components/Footer/pages/Terms';
 import WorkWithUs from '../components/Footer/pages/WorkWIthUs';
+import CardsPage  from '../pages/CardsPage';
 
 export default function AppRoutes() {
     return (
     <Routes>
+        <Route path="/adopcion" element={<CardsPage/>} />
         <Route path="/about" element={<About />} />
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/terms" element={<Terms />} />
