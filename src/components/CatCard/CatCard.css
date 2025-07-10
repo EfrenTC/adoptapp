@@ -9,6 +9,18 @@
   font-family: Arial, sans-serif;
   margin: 10px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative; /* Añadido para posicionar el corazón */
+}
+.heart-container {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 2;
+}
+
+.card-heart {
+  width: 40px;
+  height: 40px;
 }
 .cards-container {
   display: flex;
@@ -58,6 +70,10 @@
 .cat-card button:hover {
   background-color: #1d3557;
   transform: translateY(-2px);
+}
+
+.card-heart {
+  width: 50px;
 }
 
 
