@@ -3,13 +3,13 @@ import React from 'react';
 import './App.css'; 
 import AppRoutes from './routes/Routes';
 import Footer from './components/Footer/Footer';
+import Contact from './components/Contact/Contact';
 import Header from './components/Header/Header';
+
 
 function App() {
  
- 
-
-  return (
+ return (
     <>
     
     <Header></Header>
@@ -19,7 +19,6 @@ function App() {
     </AppRoutes>
 
     <Footer></Footer>
-
     </>
   );
 }
