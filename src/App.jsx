@@ -3,7 +3,7 @@ import React from 'react';
 import './App.css'; 
 import AppRoutes from './routes/Routes';
 import Footer from './components/Footer/Footer';
-import Contact from './components/Contact/Contact';
+import Contact from './pages/Contact/Contact';
 import Header from './components/Header/Header';
 
 
@@ -17,6 +17,8 @@ function App() {
     <AppRoutes>
     
     </AppRoutes>
+
+    <Contact></Contact>
 
     <Footer></Footer>
     </>
