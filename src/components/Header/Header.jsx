@@ -19,7 +19,7 @@ const Header = () => {
                 <Link to="/contacto" className="header__nav-link">Contacto</Link>
             </nav>
 
-            <button className="header__donar-btn">DONA</button>
+            <Link to="/donar" className="header__donar-btn">DONA</Link>
         </div>
     );
 };

@@ -6,6 +6,7 @@ import Terms from '../components/Footer/pages/Terms';
 import WorkWithUs from '../components/Footer/pages/WorkWIthUs';
 import CardsPage  from '../pages/CardsPage';
 import Contact from '../pages/Contact/Contact';
+import Donation from '../pages/Donation/Donation';
 
 export default function AppRoutes() {
     return (
@@ -15,7 +16,8 @@ export default function AppRoutes() {
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/terms" element={<Terms />} />
         <Route path="/work-with-us" element={<WorkWithUs />} />
-          <Route path="/contacto" element={<Contact />} />
+        <Route path="/contacto" element={<Contact />} />
+        <Route path="/donar" element={<Donation />} />
       </Routes>
     );
 }

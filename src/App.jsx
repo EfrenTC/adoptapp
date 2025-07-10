@@ -5,6 +5,7 @@ import AppRoutes from './routes/Routes';
 import Footer from './components/Footer/Footer';
 import Contact from './pages/Contact/Contact';
 import Header from './components/Header/Header';
+import Donation from  './pages/Donation/Donation';
 
 
 function App() {
