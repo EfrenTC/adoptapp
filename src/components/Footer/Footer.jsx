@@ -4,18 +4,19 @@ import './Footer.css';
 
 const Footer = () => {
   return (
-    <footer className="footer">
-      <div className="footer-container">
-        <div className="footer-content">
-          <div className="footer-links">
-            <Link to="/about">Quiénes somos</Link>
-            <Link to="/privacy">Política de privacidad</Link>
-            <Link to="/terms">Términos y condiciones</Link>
-            <Link to="/work-with-us">Trabaja con nosotros</Link>
+  <footer className="footer">
+      <div className="footer__container">
+        <div className="footer__content">
+          <div className="footer__links">
+            <Link to="/about" className="footer__link">Quiénes somos</Link>
+            <Link to="/privacy" className="footer__link">Política de privacidad</Link>
+            <Link to="/terms" className="footer__link">Términos y condiciones</Link>
+            <Link to="/work-with-us" className="footer__link">Trabaja con nosotros</Link>
           </div>
-<div className="message-with-icons">
+          
+ <div className="footer__message">
   <svg
-    className="icon"
+     className="footer__icon"
     fill="#000000"
     version="1.1"
     id="Capa_1"
@@ -34,13 +35,13 @@ const Footer = () => {
     </g>
   </svg>
 
-  <p>Gracias por ayudar a darles un hogar a nuestros gatitos</p>
+  <p className="footer__message-text">Gracias por ayudar a darles un hogar a nuestros gatitos</p>
 
   <svg
     viewBox="0 0 24 24"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
-    className="icon"
+    className="footer__icon"
     aria-hidden="true"
   >
     <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
@@ -94,7 +95,7 @@ const Footer = () => {
 </div>
 
 
-          <div className="copy">
+         <div className="footer__copy">
             <p>&copy; {new Date().getFullYear()} Adoptapp · Todos los derechos reservados</p>
           </div>
         </div>

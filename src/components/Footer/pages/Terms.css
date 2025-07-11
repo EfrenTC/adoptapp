@@ -1,83 +1,74 @@
-.terms-container {
-  min-height: 100vh;
+.terms {
   background: linear-gradient(135deg, #f8fafc 0%, #e0f2fe 50%, #e0e7ff 100%);
-  padding: 3rem 1rem;
+  min-height: 100vh;
+  padding: 2rem 2rem;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   box-sizing: border-box;
-}
-
-.terms-content {
-  max-width: 64rem;
-  margin: 0 auto;
-  background-color: white;
-  border-radius: 1rem;
-  border: 1px solid #f3f4f6;
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.1);
-  padding: 3rem;
   color: #111827;
-  line-height: 1.8;
 }
 
-.terms-content h1 {
+.terms__content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.terms__title {
   font-size: 3rem;
   font-weight: 700;
-  color: #111827;
-  margin-bottom: 1.5rem;
   text-align: center;
-  line-height: 1.2;
+  margin-bottom: 3rem;
+  color: #1f2937;
 }
 
-.terms-content h2 {
+.terms__section {
+  margin-bottom: 2.5rem;
+}
+
+.terms__subtitle {
   font-size: 1.5rem;
   font-weight: 600;
-  margin-top: 2.5rem;
   margin-bottom: 1rem;
   color: #1f2937;
 }
 
-.terms-content p {
+.terms__text {
   font-size: 1.1rem;
   color: #374151;
-  margin: 1rem 0;
+  line-height: 1.8;
 }
 
-.terms-content em {
+.terms__date {
   font-size: 0.95rem;
   color: #6b7280;
   display: block;
-  margin-top: 2.5rem;
+  margin-top: 3rem;
   text-align: center;
 }
 
-
 @media (max-width: 768px) {
-  .terms-content {
-    padding: 2rem 1.5rem;
+  .terms {
+    padding: 3rem 1.5rem;
   }
 
-  .terms-content h1 {
+  .terms__title {
     font-size: 2.5rem;
   }
 
-  .terms-content h2 {
+  .terms__subtitle {
     font-size: 1.25rem;
   }
 
-  .terms-content p {
+  .terms__text {
     font-size: 1rem;
   }
 }
 
 @media (max-width: 480px) {
-  .terms-container {
+  .terms {
     padding: 2rem 1rem;
   }
 
-  .terms-content {
-    padding: 1.5rem;
-  }
-
-  .terms-content h1 {
+  .terms__title {
     font-size: 2rem;
   }
 }
