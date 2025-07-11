@@ -6,7 +6,7 @@ import Footer from './components/Footer/Footer';
 import Contact from './pages/Contact/Contact';
 import Header from './components/Header/Header';
 import Donation from  './pages/Donation/Donation';
-
+import Slider from './components/Slider/Slider';
 
 function App() {
  
@@ -18,7 +18,7 @@ function App() {
     <AppRoutes>
     
     </AppRoutes>
-
+    <Slider></Slider>
     <Footer></Footer>
     </>
   );
