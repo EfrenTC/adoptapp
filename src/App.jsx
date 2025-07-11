@@ -1,28 +1,19 @@
-
 import React from 'react';
 import './App.css'; 
 import AppRoutes from './routes/Routes';
 import Footer from './components/Footer/Footer';
-import Contact from './pages/Contact/Contact';
 import Header from './components/Header/Header';
-import Donation from  './pages/Donation/Donation';
-
 
 function App() {
- 
- return (
-    <>
-    
-    <Header></Header>
-
-    <AppRoutes>
-    
-    </AppRoutes>
-
-    <Footer></Footer>
-    </>
+  return (
+    <div className="page-wrapper">
+      <Header />
+      <main className="main-content">
+        <AppRoutes />
+      </main>
+      <Footer />
+    </div>
   );
 }
 
 export default App;
-

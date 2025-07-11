@@ -1,15 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Footer.css';
-import Logo from '../../assets/Logo.png';
 
 const Footer = () => {
   return (
   <footer className="footer">
   <div className="footer-container">
-    <div className="logo-wrapper">
-      <img src={Logo} alt="Adoptapp Logo" />
-    </div>
 
     <div className="footer-content">
       <div className="footer-links">
