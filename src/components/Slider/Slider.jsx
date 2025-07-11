@@ -1,16 +1,21 @@
 
 import React, { useEffect, useState } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+import 'swiper/css';
+import 'swiper/css/effect-coverflow';
+import 'swiper/css/pagination';
+
 import './Slider.css';
 
+import { EffectCoverflow, Pagination, Autoplay } from 'swiper/modules';
 const Slider = () => {
-   const [cats, setCats] = useState([]);
-  const [startIndex, setStartIndex] = useState(0);
-  const visibleCount = 3;
+ const [cats, setCats] = useState([]);
 
   useEffect(() => {
     const fetchCats = async () => {
       try {
-        const response = await fetch('https://api.thecatapi.com/v1/images/search?limit=10');
+        const response = await fetch('https://api.thecatapi.com/v1/images/search?limit=9');
         const result = await response.json();
         setCats(result);
       } catch (error) {
@@ -21,38 +26,36 @@ const Slider = () => {
     fetchCats();
   }, []);
 
-  const next = () => {
-    if (startIndex + visibleCount < cats.length) {
-      setStartIndex(startIndex + 1);
-    }
-  };
-
-  const prev = () => {
-    if (startIndex > 0) {
-      setStartIndex(startIndex - 1);
-    }
-  };
-
-  const visibleCats = cats.slice(startIndex, startIndex + visibleCount);
-
   return (
-    <div className="slider">
-      <button onClick={prev} className="slider__button slider__button--prev">←</button>
-
-      <div className="slider__track">
-        {visibleCats.map((cat) => (
-          <div className="slider__card" key={cat.id}>
-            <img className="slider__image" src={cat.url} alt="Cute cat" />
-            <div className="slider__content">
-            </div>
-          </div>
+    <div className="cat-coverflow">
+      <Swiper
+        effect="coverflow"
+        grabCursor={true}
+        centeredSlides={true}
+        slidesPerView="auto"
+        autoplay={{
+          delay: 2500,         // 👈 tiempo entre slides
+          disableOnInteraction: false, // no se detiene si el usuario interactúa
+        }}
+        coverflowEffect={{
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        }}
+        pagination={true}
+        modules={[EffectCoverflow, Pagination, Autoplay]} // 👈 incluir Autoplay
+        className="cat-coverflow__swiper"
+      >
+        {cats.map((cat) => (
+          <SwiperSlide key={cat.id} className="cat-coverflow__slide">
+            <img className="cat-coverflow__image" src={cat.url} alt="Cat" />
+          </SwiperSlide>
         ))}
-      </div>
-
-      <button onClick={next} className="slider__button slider__button--next">→</button>
+      </Swiper>
     </div>
   );
-};
-
+}
 
 export default Slider
