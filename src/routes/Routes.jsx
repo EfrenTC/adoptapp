@@ -8,6 +8,7 @@ import CardsPage  from '../pages/CardsPage';
 import Contact from '../pages/Contact/Contact';
 import Donation from '../pages/Donation/Donation';
 import Home from '../pages/Home/Home';
+import Tips from '../pages/Tips/Tips';
 
 export default function AppRoutes() {
     return (
@@ -20,6 +21,7 @@ export default function AppRoutes() {
         <Route path="/contacto" element={<Contact />} />
         <Route path="/donar" element={<Donation />} />
         <Route path="/" element={<Home />} />
+        <Route path="/consejos" element={<Tips />} />
       </Routes>
     );
 }

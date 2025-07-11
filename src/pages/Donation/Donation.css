@@ -1,18 +1,18 @@
-.donation-page {
+.donation {
   min-height: 80vh;
   background: linear-gradient(135deg, #f8fafc 0%, #e0f2fe 50%, #e0e7ff 100%);
   padding: 3rem 1rem;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.donation-header {
+.donation__header {
   max-width: 64rem;
   margin: 0 auto;
   text-align: center;
   margin-bottom: 3rem;
 }
 
-.donation-title {
+.donation__title {
   font-size: 3rem;
   font-weight: 700;
   color: #111827;
@@ -20,7 +20,7 @@
   line-height: 1.2;
 }
 
-.donation-subtitle {
+.donation__subtitle {
   font-size: 1.25rem;
   color: #4b5563;
   max-width: 32rem;
@@ -28,7 +28,35 @@
   line-height: 1.6;
 }
 
-.donation-content {
+.donation__success {
+  display: flex;
+  justify-content: center;
+}
+
+.donation__success-message {
+  background-color: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.donation__success-icon-svg {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: #059669;
+}
+
+.donation__success-text {
+  color: #065f46;
+  font-weight: 500;
+  margin: 0;
+}
+
+.donation__content {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -36,7 +64,7 @@
   margin-top: 3rem;
 }
 
-.donation-card {
+.donation__card {
   background-color: white;
   border-radius: 1rem;
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
@@ -48,27 +76,20 @@
   min-width: 300px;
 }
 
-.donation-card h2 {
+.donation__card-title {
   font-size: 1.5rem;
   margin-bottom: 1rem;
   font-weight: 600;
   color: #111827;
 }
 
-.donation-card p {
-  font-size: 1rem;
-  color: #374151;
-  margin-bottom: 1rem;
-  line-height: 1.6;
-}
-
-.donation-form {
+.donation__form {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
 }
 
-.donation-form input {
+.donation__input {
   width: 100%;
   padding: 0.75rem 1rem;
   border: 1px solid #d1d5db;
@@ -80,17 +101,17 @@
   box-sizing: border-box;
 }
 
-.donation-form input::placeholder {
+.donation__input::placeholder {
   color: #6b7280;
 }
 
-.donation-form input:focus {
+.donation__input:focus {
   outline: none;
   border-color: #4f46e5;
   box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.2);
 }
 
-.donation-form button {
+.donation__submit {
   width: 100%;
   background-color: #4f46e5;
   color: white;
@@ -104,80 +125,104 @@
   transform: translateY(0);
 }
 
-.donation-form button:hover:not(:disabled) {
+.donation__submit:hover:not(:disabled) {
   background-color: #4338ca;
   transform: translateY(-1px) scale(1.02);
 }
 
-.donation-form button:active:not(:disabled) {
+.donation__submit:active:not(:disabled) {
   transform: translateY(0) scale(0.98);
 }
 
-.donation-form button:focus {
+.donation__submit:focus {
   outline: none;
   box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.5);
 }
 
-.donation-flex {
+.donation__submit--loading {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none !important;
+}
+
+.donation__loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.donation__spinner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.donation__spinner-svg {
+  width: 1.25rem;
+  height: 1.25rem;
+  animation: spin 1s linear infinite;
+}
+
+.donation__spinner-circle {
+  opacity: 0.25;
+}
+
+.donation__spinner-path {
+  opacity: 0.75;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.donation__row {
   display: flex;
   gap: 1rem;
 }
 
-.donation-paypal-button {
-  display: inline-block;
-  background-color: #ffc439;
-  color: #1f2937;
-  padding: 0.75rem 1.5rem;
-  font-weight: 600;
-  text-align: center;
-  border-radius: 0.5rem;
-  margin-top: 1rem;
-  text-decoration: none;
-  transition: background 0.2s ease;
-}
-
-.donation-paypal-button:hover {
-  background-color: #ffb100;
-}
-
-/* MEDIA QUERIES */
 
 @media (min-width: 768px) {
-  .donation-page {
+  .donation {
     padding: 4rem 1rem;
   }
 
-  .donation-title {
+  .donation__title {
     font-size: 4rem;
   }
 
-  .donation-subtitle {
+  .donation__subtitle {
     font-size: 1.5rem;
   }
 
-  .donation-card {
+  .donation__card {
     padding: 3rem;
   }
 }
 
 @media (max-width: 480px) {
-  .donation-page {
+  .donation {
     padding: 2rem 0.5rem;
   }
 
-  .donation-title {
+  .donation__title {
     font-size: 2.5rem;
   }
 
-  .donation-subtitle {
+  .donation__subtitle {
     font-size: 1.125rem;
   }
 
-  .donation-card {
+  .donation__card {
     padding: 1.5rem;
   }
 
-  .donation-form {
+  .donation__form {
     gap: 1.25rem;
   }
 }
