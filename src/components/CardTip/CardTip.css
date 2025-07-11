@@ -1,0 +1,26 @@
+.card-tip {
+    width: 100%;
+    max-width: 320px;
+    margin: 10px;
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.card-tip__img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+.card-tip__titulo {
+    color: #87bdd8;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 12px 0 8px;
+}
+
+.card-tip__texto {
+    color: #222;
+    font-size: 0.95rem;
+    text-align: left;
+    white-space: pre-line; 
+}
