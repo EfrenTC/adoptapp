@@ -71,3 +71,21 @@
   height: 24px;
   min-width: 24px;
 }
+
+@media (max-width: 600px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .footer-content {
+    align-items: center;
+    text-align: center;
+  }
+}
