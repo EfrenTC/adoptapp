@@ -1,19 +1,17 @@
-.work-page {
+.work {
   min-height: 80vh;
   background: linear-gradient(135deg, #f8fafc 0%, #e0f2fe 50%, #e0e7ff 100%);
-  padding: 3rem 1rem; 
+  padding: 2rem 1rem;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-
-.work-header {
+.work__header {
   max-width: 64rem;
-  margin: 0 auto;
+  margin: 0 auto 3rem;
   text-align: center;
-  margin-bottom: 3rem;
 }
 
-.work-title {
+.work__title {
   font-size: 3rem;
   font-weight: 700;
   color: #111827;
@@ -21,7 +19,7 @@
   line-height: 1.2;
 }
 
-.work-subtitle {
+.work__subtitle {
   font-size: 1.25rem;
   color: #4b5563;
   max-width: 32rem;
@@ -29,13 +27,12 @@
   line-height: 1.6;
 }
 
-
-.work-success-container {
+.work__success-container {
   max-width: 32rem;
   margin: 0 auto 2rem;
 }
 
-.work-success-message {
+.work__success-message {
   background-color: #f0fdf4;
   border: 1px solid #bbf7d0;
   border-radius: 0.5rem;
@@ -45,28 +42,28 @@
   gap: 0.75rem;
 }
 
-.work-success-icon {
+.work__success-icon {
   flex-shrink: 0;
 }
 
-.work-success-icon-svg {
+.work__success-icon-svg {
   width: 1.25rem;
   height: 1.25rem;
   color: #059669;
 }
 
-.work-success-text {
+.work__success-text {
   color: #065f46;
   font-weight: 500;
   margin: 0;
 }
 
-.work-form-container {
+.work__form-container {
   max-width: 32rem;
   margin: 0 auto;
 }
 
-.work-form-card {
+.work__form-card {
   background-color: white;
   border-radius: 1rem;
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
@@ -74,36 +71,35 @@
   overflow: hidden;
 }
 
-.work-form-content {
+.work__form-content {
   padding: 2.5rem;
 }
 
-.work-form {
+.work__form {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
 }
 
-.work-field {
+.work__field {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
 
-.work-label {
-  display: block;
+.work__label {
   font-size: 0.875rem;
   font-weight: 600;
   color: #111827;
 }
 
-.work-optional {
+.work__optional {
   color: #6b7280;
   font-weight: 400;
 }
 
-.work-input,
-.work-textarea {
+.work__input,
+.work__textarea {
   width: 100%;
   padding: 0.75rem 1rem;
   border: 1px solid #d1d5db;
@@ -115,28 +111,28 @@
   box-sizing: border-box;
 }
 
-.work-input::placeholder,
-.work-textarea::placeholder {
+.work__input::placeholder,
+.work__textarea::placeholder {
   color: #6b7280;
 }
 
-.work-input:focus,
-.work-textarea:focus {
+.work__input:focus,
+.work__textarea:focus {
   outline: none;
   border-color: #4f46e5;
   box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.2);
 }
 
-.work-textarea {
+.work__textarea {
   resize: vertical;
   min-height: 120px;
 }
 
-.work-submit-container {
+.work__submit-container {
   padding-top: 1rem;
 }
 
-.work-submit-button {
+.work__submit-button {
   width: 100%;
   background-color: #4f46e5;
   color: white;
@@ -150,50 +146,50 @@
   transform: translateY(0);
 }
 
-.work-submit-button:hover:not(:disabled) {
+.work__submit-button:hover:not(:disabled) {
   background-color: #4338ca;
   transform: translateY(-1px) scale(1.02);
 }
 
-.work-submit-button:active:not(:disabled) {
+.work__submit-button:active:not(:disabled) {
   transform: translateY(0) scale(0.98);
 }
 
-.work-submit-button:focus {
+.work__submit-button:focus {
   outline: none;
   box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.5);
 }
 
-.work-submit-loading {
+.work__submit-button--loading {
   opacity: 0.5;
   cursor: not-allowed;
   transform: none !important;
 }
 
-.work-loading-content {
+.work__loading-content {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
 }
 
-.work-spinner {
+.work__spinner {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.work-spinner-svg {
+.work__spinner-svg {
   width: 1.25rem;
   height: 1.25rem;
   animation: spin 1s linear infinite;
 }
 
-.work-spinner-circle {
+.work__spinner-circle {
   opacity: 0.25;
 }
 
-.work-spinner-path {
+.work__spinner-path {
   opacity: 0.75;
 }
 
@@ -206,53 +202,54 @@
   }
 }
 
-.work-footer {
+.work__footer {
   margin-top: 2rem;
   text-align: center;
 }
 
-.work-footer-text {
+.work__footer-text {
   font-size: 0.875rem;
   color: #6b7280;
   margin: 0;
 }
 
+
 @media (min-width: 768px) {
-  .work-page {
+  .work {
     padding: 4rem 1rem;
   }
-  
-  .work-title {
+
+  .work__title {
     font-size: 4rem;
   }
-  
-  .work-subtitle {
+
+  .work__subtitle {
     font-size: 1.5rem;
   }
-  
-  .work-form-content {
+
+  .work__form-content {
     padding: 3rem;
   }
 }
 
 @media (max-width: 480px) {
-  .work-page {
+  .work {
     padding: 2rem 0.5rem;
   }
-  
-  .work-title {
+
+  .work__title {
     font-size: 2.5rem;
   }
-  
-  .work-subtitle {
+
+  .work__subtitle {
     font-size: 1.125rem;
   }
-  
-  .work-form-content {
+
+  .work__form-content {
     padding: 1.5rem;
   }
-  
-  .work-form {
+
+  .work__form {
     gap: 1.25rem;
   }
 }
