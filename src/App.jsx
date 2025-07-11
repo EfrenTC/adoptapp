@@ -1,22 +1,28 @@
 
-import './App.css'
-import Api from './services/Api'
-import AppRoutes from "./routes/Routes";
+import React from 'react';
+import './App.css'; 
+import AppRoutes from './routes/Routes';
 import Footer from './components/Footer/Footer';
+import Contact from './pages/Contact/Contact';
+import Header from './components/Header/Header';
+import Donation from  './pages/Donation/Donation';
 
 
 function App() {
-
-  return (
+ 
+ return (
     <>
-    <AppRoutes>
+    
+    <Header></Header>
 
+    <AppRoutes>
+    
     </AppRoutes>
 
     <Footer></Footer>
-
     </>
   );
 }
 
 export default App;
+

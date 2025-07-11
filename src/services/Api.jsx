@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import Card from '../components/CatCard/CatCard'
+import './Api.css'
 
 export default function Api() {
   const [data, setData] = useState(null);
@@ -37,13 +39,16 @@ export default function Api() {
   if (!data) return <p>No hay datos</p>;
 
   return (
-    <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem' }}>
-      {data.map((cat, idx) => (
-        <div key={idx} style={{ textAlign: 'center' }}>
-          <img src={cat.url} alt={`Gato ${cat.name}`} width={200} />
-          <p>{cat.name}</p>
-        </div>
-      ))}
-    </div>
+    <div className="cards__container">
+    {data.map((cat, idx) => (
+      <Card
+        key={idx}
+        name={cat.name}
+        breed={cat.breeds && cat.breeds[0] ? cat.breeds[0].name : 'Desconocida'}
+        imageUrl={cat.url}
+        onAdoptClick={() => alert(`¡Has adoptado a ${cat.name}!`)}
+      />
+    ))}
+  </div>
   );
 }
