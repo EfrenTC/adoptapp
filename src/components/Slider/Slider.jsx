@@ -1,11 +1,10 @@
 
 import React, { useEffect, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-
+import { Link } from 'react-router-dom';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
-
 import './Slider.css';
 
 import { EffectCoverflow, Pagination, Autoplay } from 'swiper/modules';
@@ -34,8 +33,8 @@ const Slider = () => {
         centeredSlides={true}
         slidesPerView="auto"
         autoplay={{
-          delay: 2500,         // 👈 tiempo entre slides
-          disableOnInteraction: false, // no se detiene si el usuario interactúa
+          delay: 2500,        
+          disableOnInteraction: false,
         }}
         coverflowEffect={{
           rotate: 50,
@@ -45,7 +44,7 @@ const Slider = () => {
           slideShadows: true,
         }}
         pagination={true}
-        modules={[EffectCoverflow, Pagination, Autoplay]} // 👈 incluir Autoplay
+        modules={[EffectCoverflow, Pagination, Autoplay]} 
         className="cat-coverflow__swiper"
       >
         {cats.map((cat) => (
@@ -54,6 +53,9 @@ const Slider = () => {
           </SwiperSlide>
         ))}
       </Swiper>
+      <Link to="/adopcion" className='cat__slider-button'>
+        Ver todos los gatitos
+      </Link>
     </div>
   );
 }
