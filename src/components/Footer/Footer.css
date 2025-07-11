@@ -1,7 +1,6 @@
 .footer {
   background-color: #B3D7E5;
   padding: 30px 20px;
-  border-top: 2px solid #dcb1a3;
   font-family: 'Segoe UI', sans-serif;
   color: #2B2D57;
   box-sizing: border-box;
@@ -71,4 +70,22 @@
   width: 24px;
   height: 24px;
   min-width: 24px;
+}
+
+@media (max-width: 600px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .footer-content {
+    align-items: center;
+    text-align: center;
+  }
 }
