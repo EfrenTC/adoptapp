@@ -34,31 +34,31 @@ export default function Donation() {
   };
 
   return (
-    <div className="donation-page">
-      <header className="donation-header">
-        <h1 className="donation-title">Ayúdanos a salvar gatitos 🐾</h1>
-        <p className="donation-subtitle">
+    <div className="donation">
+      <header className="donation__header">
+        <h1 className="donation__title">Ayúdanos a salvar gatitos</h1>
+        <p className="donation__subtitle">
           Tu apoyo nos permite alimentar, cuidar y encontrar hogares amorosos para muchos gatos. ¡Gracias!
         </p>
       </header>
 
       {submitted && (
-        <div className="contact-success-container">
-          <div className="contact-success-message">
-            <div className="contact-success-icon">
-              <svg className="contact-success-icon-svg" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+        <div className="donation__success">
+          <div className="donation__success-message">
+            <div className="donation__success-icon">
+              <svg className="donation__success-icon-svg" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
               </svg>
             </div>
-            <p className="contact-success-text">¡Gracias por tu donación!</p>
+            <p className="donation__success-text">¡Gracias por tu donación!</p>
           </div>
         </div>
       )}
 
-      <div className="donation-content">
-        <div className="donation-card">
-          <h2>Donación con tarjeta</h2>
-          <form onSubmit={handleSubmit} className="donation-form">
+      <div className="donation__content">
+        <div className="donation__card">
+          <h2 className="donation__card-title">Donación con tarjeta</h2>
+          <form onSubmit={handleSubmit} className="donation__form">
             <input
               type="text"
               name="name"
@@ -66,6 +66,7 @@ export default function Donation() {
               value={formData.name}
               onChange={handleChange}
               required
+              className="donation__input"
             />
             <input
               type="text"
@@ -74,8 +75,9 @@ export default function Donation() {
               value={formData.cardNumber}
               onChange={handleChange}
               required
+              className="donation__input"
             />
-            <div className="donation-flex">
+            <div className="donation__row">
               <input
                 type="text"
                 name="expiry"
@@ -83,6 +85,7 @@ export default function Donation() {
                 value={formData.expiry}
                 onChange={handleChange}
                 required
+                className="donation__input"
               />
               <input
                 type="text"
@@ -91,6 +94,7 @@ export default function Donation() {
                 value={formData.cvv}
                 onChange={handleChange}
                 required
+                className="donation__input"
               />
             </div>
             <input
@@ -100,18 +104,19 @@ export default function Donation() {
               value={formData.amount}
               onChange={handleChange}
               required
+              className="donation__input"
             />
             <button
               type="submit"
-              className={`contact-submit-button ${loading ? "contact-submit-loading" : ""}`}
+              className={`donation__submit ${loading ? "donation__submit--loading" : ""}`}
               disabled={loading}
             >
               {loading ? (
-                <div className="contact-loading-content">
-                  <div className="contact-spinner">
-                    <svg className="contact-spinner-svg" viewBox="0 0 50 50">
-                      <circle className="contact-spinner-circle" cx="25" cy="25" r="20" fill="none" strokeWidth="5"></circle>
-                      <path className="contact-spinner-path" fill="none" strokeWidth="5" d="M25 5a20 20 0 1 1-14.14 5.86" />
+                <div className="donation__loading">
+                  <div className="donation__spinner">
+                    <svg className="donation__spinner-svg" viewBox="0 0 50 50">
+                      <circle className="donation__spinner-circle" cx="25" cy="25" r="20" fill="none" strokeWidth="5"></circle>
+                      <path className="donation__spinner-path" fill="none" strokeWidth="5" d="M25 5a20 20 0 1 1-14.14 5.86" />
                     </svg>
                   </div>
                   Procesando...
