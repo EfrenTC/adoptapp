@@ -54,3 +54,21 @@
   font-size: 0.85rem;
   margin: 0;
 }
+
+.message-with-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 1rem;
+  font-style: italic;
+  margin: 0;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+}
