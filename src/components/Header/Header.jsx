@@ -1,6 +1,6 @@
 import React from "react";
 import "./Header.css";
-import { useState } from "react"; 
+import { useState } from "react";
 import logo from "../../assets/logo.png";
 import { Link } from 'react-router-dom';
 
@@ -18,24 +18,26 @@ const Header = () => {
             </div>
 
             <button className="header__burger"
-            onClick={toggleMenu}
-            aria-label="Menú">
+                onClick={toggleMenu}
+                aria-label="Menú">
                 <span className="header__burger-line"></span>
                 <span className="header__burger-line"></span>
                 <span className="header__burger-line"></span>
             </button>
 
             <nav className={`header__nav ${menuAbierto ? "header__nav--open" : ""}`}>
-                <a href="#" className="header__nav-link">Inicio</a>
-                <a href="#" className="header__nav-link">Adopta</a>
-                <a href="#" className="header__nav-link">Consejos</a>
-                <a href="#" className="header__nav-link">Historias</a>
-                <a href="#" className="header__nav-link">Contacto</a>
-            <button className="header__donar-btn">DONA</button>
+                <Link to="/" className="header__nav-link">Inicio</Link>
+                <Link to="/adopcion" className="header__nav-link">Adopta</Link>
+                <Link to="/consejos" className="header__nav-link">Consejos</Link>
+                <Link to="/historias" className="header__nav-link">Historias</Link>
+                <Link to="/contacto" className="header__nav-link">Contacto</Link>
+                <Link to="/donar" className="header__donar-btn">DONA</Link>
+
             </nav>
 
-            
-        </div>            
+
+
+        </div>
     );
 };
 
