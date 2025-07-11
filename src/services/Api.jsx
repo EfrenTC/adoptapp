@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Card from '../components/CatCard/CatCard'
+import './Api.css'
 
 export default function Api() {
   const [data, setData] = useState(null);
@@ -38,7 +39,7 @@ export default function Api() {
   if (!data) return <p>No hay datos</p>;
 
   return (
-    <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem' }}>
+    <div className="cards__container">
     {data.map((cat, idx) => (
       <Card
         key={idx}

@@ -1,5 +1,5 @@
 .cat-card {
-  width: 250px;
+
   background-color: #B3D7E5;
   border: 1px solid #ddd;
   border-radius: 12px;
@@ -9,7 +9,24 @@
   font-family: Arial, sans-serif;
   margin: 10px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative; /* Añadido para posicionar el corazón */
+ justify-content: center;
+  width: 250px;      
+  flex: 0 0 250px;
 }
+
+.heart-container {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 2;
+}
+
+.card-heart {
+  width: 40px;
+  height: 40px;
+}
+
 .cards-container {
   display: flex;
   flex-wrap: wrap; /* para que bajen si no caben */
@@ -29,6 +46,7 @@
   object-fit: cover;
   display: block;
   border-bottom: 1px solid #ccc;
+  position: relative;
 }
 
 .cat-card h3 {
@@ -60,5 +78,8 @@
   transform: translateY(-2px);
 }
 
+.card-heart {
+  width: 50px;
+}
 
 
