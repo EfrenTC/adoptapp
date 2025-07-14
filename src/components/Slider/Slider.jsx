@@ -5,7 +5,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
-
+import { Link } from 'react-router-dom';
 import './Slider.css';
 
 import { EffectCoverflow, Pagination, Autoplay } from 'swiper/modules';
@@ -28,6 +28,7 @@ const Slider = () => {
 
   return (
     <div className="cat-coverflow">
+      <h1 className='cat-coverflow__title'>¡Conoce a tu futuro amichi!</h1>
       <Swiper
         effect="coverflow"
         grabCursor={true}
@@ -54,6 +55,7 @@ const Slider = () => {
           </SwiperSlide>
         ))}
       </Swiper>
+      <Link to="/adopcion" className="cat__slider-button">Ver todos los gatitos</Link>
     </div>
   );
 }
