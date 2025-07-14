@@ -34,7 +34,7 @@
 
 .historia-articulo__imagen {
   max-width: 100%;
-  height: auto;
+  height: 250px;
   border-radius: 6px;
   margin-bottom: 20px;
   display: block;
@@ -52,6 +52,7 @@
   color: #555;
   margin-bottom: 20px;
   flex-grow: 1;
+  text-align: start;
 }
 
 
