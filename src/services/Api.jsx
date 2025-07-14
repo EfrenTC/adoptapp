@@ -35,8 +35,22 @@ export default function Api() {
     fetchData();
   }, []);
 
-  if (loading) return <p>Cargando...</p>;
-  if (!data) return <p>No hay datos</p>;
+ if (loading) {
+  return (
+    <div className="spinner__container">
+      <div className="spinner"></div>
+    </div>
+  );
+}
+
+if (!data || data.length === 0) {
+  return (
+    <div className="nodata__container">
+      <p className="nodata__message">No se encontraron gatitos</p>
+    </div>
+  );
+}
+
 
   return (
     <div className="cards__container">
