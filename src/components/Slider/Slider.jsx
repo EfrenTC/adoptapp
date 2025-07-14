@@ -27,13 +27,14 @@ const Slider = () => {
 
   return (
     <div className="cat-coverflow">
+      <h1 className='cat-coverflow__title'>¡Conoce a tu futuro amichi!</h1>
       <Swiper
         effect="coverflow"
         grabCursor={true}
         centeredSlides={true}
         slidesPerView="auto"
         autoplay={{
-          delay: 2500,        
+          delay: 2500,         
           disableOnInteraction: false,
         }}
         coverflowEffect={{
@@ -44,7 +45,7 @@ const Slider = () => {
           slideShadows: true,
         }}
         pagination={true}
-        modules={[EffectCoverflow, Pagination, Autoplay]} 
+        modules={[EffectCoverflow, Pagination, Autoplay]}
         className="cat-coverflow__swiper"
       >
         {cats.map((cat) => (
@@ -53,9 +54,7 @@ const Slider = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-      <Link to="/adopcion" className='cat__slider-button'>
-        Ver todos los gatitos
-      </Link>
+      <Link to="/adopcion" className="cat__slider-button">Ver todos los gatitos</Link>
     </div>
   );
 }
