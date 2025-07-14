@@ -2,10 +2,12 @@
 import React from 'react'
 import Slider from '../../components/Slider/Slider';
 import './Home.css';
+import logo from '../../assets/adoptapp.png';
 
 const Home = () => {
   return (
     <div>
+      <img src={logo} alt="logo" className="home__logo" />
       <Slider></Slider>
       <div className="home__container">
         <h1>¿Qué hacemos?</h1>
