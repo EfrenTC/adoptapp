@@ -1,13 +1,10 @@
-/* src/components/Historias/Historias.css (Actualizado con BEM) */
-
-/* BLOQUE: historias-pagina */
 .historias-pagina {
   padding: 20px;
   max-width: 1200px;
   margin: 20px auto;
+  text-align: center;
 }
 
-/* ELEMENTO: historias-pagina__titulo */
 .historias-pagina__titulo {
   text-align: center;
   color: #333;
@@ -15,64 +12,26 @@
   font-size: 2.5em;
 }
 
-/* ELEMENTO: historias-pagina__navegacion */
-.historias-pagina__navegacion {
-  text-align: center;
-  margin-bottom: 40px;
-  border-bottom: 1px solid #eee;
-  padding-bottom: 15px;
-}
-
-/* ELEMENTO: historias-pagina__navegacion-item */
-.historias-pagina__navegacion-item {
-  margin: 0 15px;
-  text-decoration: none;
-  color: #007bff;
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
-
-.historias-pagina__navegacion-item:hover {
-  color: #0056b3;
-}
-
-/* MODIFICADOR: historias-pagina__navegacion-item--activo */
-.historias-pagina__navegacion-item--activo {
-  color: #0056b3;
-  border-bottom: 2px solid #0056b3;
-  padding-bottom: 15px;
-}
-
-/* ELEMENTO: historias-pagina__contenedor-cuerpo (Actúa como contenedor Flexbox) */
 .historias-pagina__contenedor-cuerpo {
   margin-top: 40px;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid; 
+  grid-template-columns: repeat(2, 1fr); 
   gap: 30px;
-  justify-content: center;
-  align-items: stretch;
+  justify-content: center; 
+  max-width: 900px; 
+  margin: 40px auto 0 auto; 
 }
 
-/* ************************************************************ */
-/* BLOQUE ANIDADO: historia-articulo (Cada historia individual) */
-/* ************************************************************ */
 .historia-articulo {
-  /* Define el tamaño para 3 columnas en pantallas grandes */
-  flex: 1 1 calc(33.33% - 20px);
-  max-width: calc(33.33% - 20px);
-
-  /* Estilos visuales de la tarjeta */
-  background-color: #fff;
   border: 1px solid #e0e0e0;
   border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
   padding: 25px;
   box-sizing: border-box;
   display: flex;
-  flex-direction: column; /* Apila el contenido verticalmente dentro del artículo */
+  flex-direction: column;
 }
 
-/* ELEMENTO: historia-articulo__imagen */
 .historia-articulo__imagen {
   max-width: 100%;
   height: auto;
@@ -81,7 +40,6 @@
   display: block;
 }
 
-/* ELEMENTO: historia-articulo__titulo */
 .historia-articulo__titulo {
   color: #2c3e50;
   font-size: 1.6em;
@@ -89,59 +47,33 @@
   margin-bottom: 15px;
 }
 
-/* ELEMENTO: historia-articulo__texto */
 .historia-articulo__texto {
   line-height: 1.7;
   color: #555;
   margin-bottom: 20px;
-  flex-grow: 1; /* Permite que el texto crezca y empuje el botón hacia abajo */
+  flex-grow: 1;
 }
 
-/* ELEMENTO: historia-articulo__boton-leer-mas */
-.historia-articulo__boton-leer-mas {
-  display: inline-block;
-  background-color: #007bff;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-  align-self: flex-start; /* Alinea el botón al inicio de la columna */
-  margin-top: auto; /* Empuja el botón al final si el texto es de longitud variable */
-}
-
-.historia-articulo__boton-leer-mas:hover {
-  background-color: #0056b3;
-}
-
-/* ************************************************************ */
-/* * MEDIA QUERIES (Responsividad con BEM) * */
-/* ************************************************************ */
 
 @media (max-width: 992px) {
-  .historia-articulo { /* Ajuste para el bloque del artículo */
-    flex: 1 1 calc(50% - 15px);
-    max-width: calc(50% - 15px);
+  .historias-pagina__contenedor-cuerpo {
+    grid-template-columns: 1fr; 
+    max-width: 400px; 
   }
 }
 
 @media (max-width: 600px) {
-  .historia-articulo { /* Ajuste para el bloque del artículo */
-    flex: 1 1 calc(100% - 0px);
-    max-width: calc(100% - 0px);
-  }
-  .historias-pagina__titulo { /* Ajuste para el elemento del título */
+  .historias-pagina__titulo {
     font-size: 2em;
   }
-  .historias-pagina__navegacion-item { /* Ajuste para el elemento de navegación */
+  .historias-pagina__nav-item {
     margin: 0 8px;
     font-size: 0.9em;
   }
-  .historia-articulo { /* Ajuste para el bloque del artículo */
+  .historia-articulo {
     padding: 15px;
   }
-  .historia-articulo__titulo { /* Ajuste para el elemento del título del artículo */
+  .historia-articulo__titulo {
     font-size: 1.4em;
   }
 }
