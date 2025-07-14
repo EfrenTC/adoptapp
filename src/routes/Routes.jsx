@@ -7,6 +7,7 @@ import WorkWithUs from '../components/Footer/pages/WorkWIthUs';
 import CardsPage  from '../pages/CardsPage';
 import Contact from '../pages/Contact/Contact';
 import Donation from '../pages/Donation/Donation';
+import Tips from '../pages/Tips/Tips';
 import Home from '../pages/Home/Home';
 
 export default function AppRoutes() {
@@ -19,6 +20,7 @@ export default function AppRoutes() {
         <Route path="/work-with-us" element={<WorkWithUs />} />
         <Route path="/contacto" element={<Contact />} />
         <Route path="/donar" element={<Donation />} />
+        <Route path="/consejos" element={<Tips />} />
         <Route path="/" element={<Home />} />
       </Routes>
     );
