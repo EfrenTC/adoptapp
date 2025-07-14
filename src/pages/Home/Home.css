@@ -1,0 +1,27 @@
+
+.home__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;  
+  padding: 20px;
+  width: 850px;
+  background-color: #ffffff;
+  border: 1px solid #f3f4f6;
+  border-radius: 1rem;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+
+}
+
+.home__list {
+  padding: 13px;
+}
+
+@media (max-width: 900px) {
+  .home__container {
+    width: 100%;
+
+  }
+}

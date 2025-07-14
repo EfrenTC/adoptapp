@@ -8,6 +8,7 @@ import CardsPage  from '../pages/CardsPage';
 import Contact from '../pages/Contact/Contact';
 import Donation from '../pages/Donation/Donation';
 import Tips from '../pages/Tips/Tips';
+import Home from '../pages/Home/Home';
 
 export default function AppRoutes() {
     return (
