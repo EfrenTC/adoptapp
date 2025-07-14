@@ -35,8 +35,8 @@ const Slider = () => {
         centeredSlides={true}
         slidesPerView="auto"
         autoplay={{
-          delay: 2500,         // 👈 tiempo entre slides
-          disableOnInteraction: false, // no se detiene si el usuario interactúa
+          delay: 2500,         
+          disableOnInteraction: false,
         }}
         coverflowEffect={{
           rotate: 50,
@@ -46,7 +46,7 @@ const Slider = () => {
           slideShadows: true,
         }}
         pagination={true}
-        modules={[EffectCoverflow, Pagination, Autoplay]} // 👈 incluir Autoplay
+        modules={[EffectCoverflow, Pagination, Autoplay]}
         className="cat-coverflow__swiper"
       >
         {cats.map((cat) => (
