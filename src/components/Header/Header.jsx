@@ -30,9 +30,9 @@ const Header = () => {
                 <Link to="/adopcion" className="header__nav-link">Adopta</Link>
                 <Link to="/consejos" className="header__nav-link">Consejos</Link>
                 <Link to="/historias" className="header__nav-link">Historias</Link>
+                <Link to="/favoritos" className="header__nav-link"> Favoritos</Link>
                 <Link to="/contacto" className="header__nav-link">Contacto</Link>
-                <Link to="/donar" className="header__donar-btn">DONA</Link>
-
+                <Link to="/donar" className="header__donar-btn">DONAR</Link>
             </nav>
 
 
