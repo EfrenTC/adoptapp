@@ -1,16 +1,13 @@
-
 import React, { useState } from 'react';
 import './Adopt.css';
 
 const Adopt = () => {
-
     const [formData, setFormData] = useState({
         nombre: '',
         email: '',
         telefono: '',
         mensaje: '',
     });
-
 
     const [errors, setErrors] = useState({});
     const [confirmationMessage, setConfirmationMessage] = useState('');
@@ -38,10 +35,10 @@ const Adopt = () => {
         setErrors(prevErrors => ({ ...prevErrors, [name]: '' }));
         setConfirmationMessage('');
     };
+
     const validateForm = () => {
         let newErrors = {};
         let isValid = true;
-
 
         for (const field in formData) {
             const value = formData[field].trim();
@@ -58,14 +55,12 @@ const Adopt = () => {
         return isValid;
     };
 
-
     const handleSubmit = (e) => {
         e.preventDefault();
 
         if (validateForm()) {
             console.log('Datos del formulario enviados:', formData);
             setConfirmationMessage('¡Tu solicitud de adopción ha sido enviada con éxito! Nos pondremos en contacto contigo pronto. 🐾');
-
 
             setFormData({
                 nombre: '',
@@ -80,29 +75,30 @@ const Adopt = () => {
     };
 
     return (
-        <div className="container">
-            <h1>Formulario de Adopción</h1>
+        <div className="adopt-form">
+            <h1 className="adopt-form__title">Formulario de Adopción</h1>
             {confirmationMessage && (
-                <div className="confirmation-message">
+                <div className="adopt-form__message adopt-form__message--confirmation">
                     {confirmationMessage}
                 </div>
             )}
-            <form onSubmit={handleSubmit}>
-                <div className="form-group">
-                    <label htmlFor="nombre">Nombre Completo:</label>
+            <form onSubmit={handleSubmit} className="adopt-form__content">
+                <div className="adopt-form__group">
+                    <label htmlFor="nombre" className="adopt-form__label">Nombre Completo:</label>
                     <input
                         type="text"
                         id="nombre"
                         name="nombre"
                         value={formData.nombre}
                         onChange={handleChange}
-                        onBlur={() => validateForm()} // Valida todo el formulario al salir de cualquier campo
+                        onBlur={() => validateForm()}
+                        className="adopt-form__input"
                     />
-                    {errors.nombre && <div className="error-message">{errors.nombre}</div>}
+                    {errors.nombre && <div className="adopt-form__error-message">{errors.nombre}</div>}
                 </div>
 
-                <div className="form-group">
-                    <label htmlFor="email">Correo Electrónico:</label>
+                <div className="adopt-form__group">
+                    <label htmlFor="email" className="adopt-form__label">Correo Electrónico:</label>
                     <input
                         type="email"
                         id="email"
@@ -110,12 +106,13 @@ const Adopt = () => {
                         value={formData.email}
                         onChange={handleChange}
                         onBlur={() => validateForm()}
+                        className="adopt-form__input"
                     />
-                    {errors.email && <div className="error-message">{errors.email}</div>}
+                    {errors.email && <div className="adopt-form__error-message">{errors.email}</div>}
                 </div>
 
-                <div className="form-group">
-                    <label htmlFor="telefono">Teléfono:</label>
+                <div className="adopt-form__group">
+                    <label htmlFor="telefono" className="adopt-form__label">Teléfono:</label>
                     <input
                         type="tel"
                         id="telefono"
@@ -123,12 +120,13 @@ const Adopt = () => {
                         value={formData.telefono}
                         onChange={handleChange}
                         onBlur={() => validateForm()}
+                        className="adopt-form__input"
                     />
-                    {errors.telefono && <div className="error-message">{errors.telefono}</div>}
+                    {errors.telefono && <div className="adopt-form__error-message">{errors.telefono}</div>}
                 </div>
 
-                <div className="form-group">
-                    <label htmlFor="mensaje">¿Por qué quieres adoptar un gato?</label>
+                <div className="adopt-form__group">
+                    <label htmlFor="mensaje" className="adopt-form__label">¿Por qué quieres adoptar un gato?</label>
                     <textarea
                         id="mensaje"
                         name="mensaje"
@@ -136,11 +134,12 @@ const Adopt = () => {
                         value={formData.mensaje}
                         onChange={handleChange}
                         onBlur={() => validateForm()}
+                        className="adopt-form__textarea"
                     ></textarea>
-                    {errors.mensaje && <div className="error-message">{errors.mensaje}</div>}
+                    {errors.mensaje && <div className="adopt-form__error-message">{errors.mensaje}</div>}
                 </div>
 
-                <button type="submit">Enviar Solicitud</button>
+                <button type="submit" className="adopt-form__button">Enviar Solicitud</button>
             </form>
         </div>
     );
