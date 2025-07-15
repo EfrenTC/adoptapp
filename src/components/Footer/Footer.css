@@ -1,5 +1,5 @@
 .footer {
-  background-color: #B3D7E5;
+  background-color: var(--nav-bg);
   padding: 30px 20px;
   font-family: 'Segoe UI', sans-serif;
   color: #2B2D57;
