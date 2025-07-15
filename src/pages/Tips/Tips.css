@@ -1,13 +1,20 @@
 .tips {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /*2colm*/
+    grid-template-columns: repeat(2, 1fr); 
     gap: 10px;
     padding: 40px 20px;
     justify-items: center;
+    max-width: 1000px;
+    margin: 40px auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
 @media (max-width: 768px) {
     .tips {
-        grid-template-columns: 1fr; /*1colm*/
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 20px 15px;
+        margin: 20 px auto;
     }
 }
