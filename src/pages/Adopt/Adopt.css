@@ -1,0 +1,136 @@
+.adopt-form {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 550px;
+    border: 1px solid #c7e0e9;
+    box-sizing: border-box;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.adopt-form__title {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-size: 2.2em;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.adopt-form__group {
+    margin-bottom: 25px;
+}
+
+.adopt-form__label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #4a6c8e;
+    font-size: 1.05em;
+}
+
+.adopt-form__input,
+.adopt-form__textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #c8d6e5;
+    border-radius: 8px;
+    font-size: 1em;
+    color: #34495e;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box;
+}
+
+.adopt-form__input:focus,
+.adopt-form__textarea:focus {
+    border-color: #6a9acb;
+    box-shadow: 0 0 0 3px rgba(106, 154, 203, 0.3);
+    outline: none;
+}
+
+.adopt-form__error-message {
+    color: #e74c3c;
+    font-size: 0.9em;
+    margin-top: 8px;
+    font-weight: 500;
+    animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-5px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.adopt-form__button {
+    background-color: #3498db;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: 600;
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    letter-spacing: 0.5px;
+}
+
+.adopt-form__button:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+}
+
+.adopt-form__button:active {
+    transform: translateY(0);
+    background-color: #2471a3;
+}
+
+.adopt-form__message {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: 500;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    animation: fadeInScale 0.4s ease-out;
+}
+
+@keyframes fadeInScale {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+@media (max-width: 600px) {
+    .adopt-form {
+        padding: 25px;
+        margin: 10px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .adopt-form__title {
+        font-size: 1.8em;
+        margin-bottom: 20px;
+    }
+
+    .adopt-form__button {
+        padding: 12px 15px;
+        font-size: 1em;
+    }
+
+    .adopt-form__label {
+        font-size: 0.95em;
+    }
+
+    .adopt-form__input,
+    .adopt-form__textarea {
+        padding: 10px 12px;
+        font-size: 0.95em;
+    }
+}
