@@ -21,7 +21,7 @@ const About = () => {
         </article>
 
         <article className="team-card">
-          <img src="/img/vanderlene.jpg" alt="Vanderlene" className="team-card__profile-pic" />
+          <img src="src/assets/Vanderlene.jpg" alt="Vanderlene" className="team-card__profile-pic" />
           <h2 className="team-card__name">Vanderlene</h2>
           <p className="team-card__description">
             Diseñadora UI/UX y desarrolladora front-end con experiencia en Figma, TailwindCSS y React. Siempre centrada en la experiencia del usuario.
