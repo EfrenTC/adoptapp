@@ -1,10 +1,24 @@
+// src/pages/CardsPage.jsx
 import React from "react";
+import { useNavigate } from 'react-router-dom'; 
 import Api from '../services/Api'
 
 export const CardsPage = () => {
-  return (
-    <Api></Api>
-  )
-}
+    const navigate = useNavigate(); 
 
-export default CardsPage
+    
+    const handleAdoptClick = (catName) => {
+        console.log(`¡Botón "Adóptame" clicado para: ${catName}! Redirigiendo al formulario...`);
+       
+        navigate('/formulario-adopcion');
+    };
+
+    return (
+        <div className="cards-page-wrapper"> 
+       
+            <Api onAdoptClick={handleAdoptClick} />
+        </div>
+    );
+};
+
+export default CardsPage;

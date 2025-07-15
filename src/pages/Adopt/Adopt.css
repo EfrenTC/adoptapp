@@ -1,0 +1,154 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e0f2f7; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    margin: 0;
+    padding: 20px; 
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15); 
+    width: 100%;
+    max-width: 550px;
+    border: 1px solid #c7e0e9;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50; 
+    margin-bottom: 30px;
+    font-size: 2.2em;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.form-group {
+    margin-bottom: 25px; 
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #4a6c8e; 
+    font-size: 1.05em;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 12px 15px; 
+    border: 1px solid #c8d6e5; 
+    border-radius: 8px; 
+    font-size: 1em;
+    color: #34495e;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box;
+}
+
+/* Estilos al enfocar los campos */
+input:focus,
+textarea:focus {
+    border-color: #6a9acb; /* Azul más vibrante al enfocar */
+    box-shadow: 0 0 0 3px rgba(106, 154, 203, 0.3); /* Sombra de enfoque azul */
+    outline: none; /* Elimina el contorno por defecto del navegador */
+}
+
+/* Mensajes de error */
+.error-message {
+    color: #e74c3c; /* Rojo de error */
+    font-size: 0.9em;
+    margin-top: 8px;
+    font-weight: 500;
+    animation: fadeIn 0.3s ease-out; /* Animación sutil al aparecer */
+}
+
+/* Animación para los mensajes de error */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-5px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Botón de envío */
+button {
+    background-color: #3498db; 
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: 600;
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    letter-spacing: 0.5px;
+}
+
+button:hover {
+    background-color: #2980b9; 
+    transform: translateY(-2px); 
+}
+
+button:active {
+    transform: translateY(0); 
+    background-color: #2471a3;
+}
+
+.confirmation-message {
+    margin-top: 30px; 
+    padding: 20px;
+    background-color: #d4edda; 
+    border: 1px solid #c3e6cb;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: 500;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); 
+    animation: fadeInScale 0.4s ease-out; 
+}
+
+@keyframes fadeInScale {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 25px;
+        margin: 10px; 
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+    }
+
+    h1 {
+        font-size: 1.8em;
+        margin-bottom: 20px;
+    }
+
+    button {
+        padding: 12px 15px;
+        font-size: 1em;
+    }
+
+    label {
+        font-size: 0.95em;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+        padding: 10px 12px;
+        font-size: 0.95em;
+    }
+}
