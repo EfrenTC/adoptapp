@@ -2,19 +2,27 @@
     width: 100%;
     max-width: 500px;
     min-height: 320px;
-    margin: 10px;
     padding: 20px;
     text-align: center;
     font-family: 'Segoe UI', sans-serif;
     background-color: white;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.08);
     border-radius: 8px;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2 ease-in-out;
+}
+
+
+.card-tip:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); 
 }
 
 .card-tip__img {
     width: 100%;
-    height: auto;
+    height: 200px;
+    object-fit: cover;
     border-radius: 4px;
+    margin-bottom: 15px;
     
 }
 
