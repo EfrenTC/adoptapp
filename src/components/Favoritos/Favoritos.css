@@ -1,0 +1,22 @@
+.favoritos {
+  padding: 2rem;
+}
+
+.favoritos__grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.5rem;
+  justify-items: center;
+}
+
+.favoritos__item {
+  width: 100%;
+  max-width: 320px;
+}
+
+.favoritos__no-favs-msg {
+  text-align: center;
+  margin-top: 4rem;
+  font-size: 1.2rem;
+  color: #555;
+}

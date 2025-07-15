@@ -1,8 +1,12 @@
 import React, { useEffect, useState } from 'react';
+import Card from '../components/CatCard/CatCard'
+import './Api.css'
+import { useNavigate } from 'react-router-dom'; 
 
 export default function Api() {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const fetchData = async () => {
@@ -33,17 +37,37 @@ export default function Api() {
     fetchData();
   }, []);
 
-  if (loading) return <p>Cargando...</p>;
-  if (!data) return <p>No hay datos</p>;
+ if (loading) {
+  return (
+    <div className="spinner__container">
+      <div className="spinner"></div>
+    </div>
+  );
+}
+
+if (!data || data.length === 0) {
+  return (
+    <div className="nodata__container">
+      <p className="nodata__message">No se encontraron gatitos</p>
+    </div>
+  );
+}
+
 
   return (
-    <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem' }}>
-      {data.map((cat, idx) => (
-        <div key={idx} style={{ textAlign: 'center' }}>
-          <img src={cat.url} alt={`Gato ${cat.name}`} width={200} />
-          <p>{cat.name}</p>
-        </div>
-      ))}
-    </div>
+    <div className="cards__container">
+    {data.map((cat, idx) => (
+      <Card
+        key={idx}
+        name={cat.name}
+        breed={cat.breeds && cat.breeds[0] ? cat.breeds[0].name : 'Desconocida'}
+        imageUrl={cat.url}
+        onAdoptClick={() => {
+          alert(`Vas a adoptar a ${cat.name}`);
+          navigate('/formulario-adopcion');
+        }}
+      />
+    ))}
+  </div>
   );
 }

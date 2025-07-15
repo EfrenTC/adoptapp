@@ -1,0 +1,51 @@
+.cards__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  width: 100%; 
+  box-sizing: border-box;
+    
+}
+
+.spinner__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+}
+
+.spinner {
+  width: 60px;
+  height: 60px;
+  border: 6px solid #ccc;
+  border-top: 6px solid #4f46e5;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.nodata__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  text-align: center;
+}
+
+.nodata__message {
+  font-size: 1.5rem;
+  color: #4b5563;
+  background-color: #fef2f2;
+  padding: 1.5rem 2rem;
+  border-radius: 1rem;
+  border: 1px solid #fecaca;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
