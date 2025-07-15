@@ -8,6 +8,8 @@
     border: 1px solid #c7e0e9;
     box-sizing: border-box;
     margin: 0 auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
 }
 
 .adopt-form__title {
