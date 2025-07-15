@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import Card from '../components/CatCard/CatCard'
 import './Api.css'
+import { useNavigate } from 'react-router-dom'; 
 
 export default function Api() {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const fetchData = async () => {
@@ -60,7 +62,10 @@ if (!data || data.length === 0) {
         name={cat.name}
         breed={cat.breeds && cat.breeds[0] ? cat.breeds[0].name : 'Desconocida'}
         imageUrl={cat.url}
-        onAdoptClick={() => alert(`¡Has adoptado a ${cat.name}!`)}
+        onAdoptClick={() => {
+          alert(`Vas a adoptar a ${cat.name}`);
+          navigate('/formulario-adopcion');
+        }}
       />
     ))}
   </div>

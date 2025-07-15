@@ -10,7 +10,7 @@ export const CardsPage = () => {
     const handleAdoptClick = (catName) => {
         console.log(`¡Botón "Adóptame" clicado para: ${catName}! Redirigiendo al formulario...`);
        
-        navigate('/formulario-adopcion');
+        navigate('/adopcion');
     };
 
     return (

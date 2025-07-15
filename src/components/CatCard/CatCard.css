@@ -63,6 +63,7 @@
 
 .cat-card button {
   background-color: #0E1F35;
+  width: fit-content;
   color: #fff;
   border: none;
   padding: 8px 20px;

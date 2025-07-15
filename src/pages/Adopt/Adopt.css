@@ -1,16 +1,4 @@
 
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #e0f2f7; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh; 
-    margin: 0;
-    padding: 20px; 
-    box-sizing: border-box;
-}
-
 .container {
     background-color: #ffffff;
     padding: 40px;
