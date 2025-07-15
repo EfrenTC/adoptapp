@@ -6,9 +6,9 @@
 }
 
 body {
-  font-family: system-ui, sans-serif;
-  background: linear-gradient(135deg, #f8fafc 0%, #e0f2fe 50%, #e0e7ff 100%);  color: #2B2D57;
-  line-height: 1.5;
+font-family: system-ui, sans-serif;
+background-color: #e0f2fe;
+line-height: 1.5;
 }
 
 

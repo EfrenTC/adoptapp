@@ -9,6 +9,7 @@ import Contact from '../pages/Contact/Contact';
 import Donation from '../pages/Donation/Donation';
 import Historias from '../components/Historias/Historias'; 
 import Tips from '../pages/Tips/Tips';
+import Favoritos from '../components/Favoritos/Favoritos';
 
 export default function AppRoutes() {
     return (
@@ -22,6 +23,7 @@ export default function AppRoutes() {
         <Route path="/donar" element={<Donation />} />
         <Route path="/historias" element={<Historias />} /> 
         <Route path="/consejos" element={<Tips />} />
+        <Route path="/favoritos" element={<Favoritos />} />
       </Routes>
     );
 }
