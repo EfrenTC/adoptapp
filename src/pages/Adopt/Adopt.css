@@ -1,11 +1,11 @@
 .adopt-form {
-    background-color: #ffffff;
+    background-color: var(--container-bg);
     padding: 40px;
     border-radius: 12px;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
     width: 100%;
     max-width: 550px;
-    border: 1px solid #c7e0e9;
+    border: 1px ;
     box-sizing: border-box;
     margin: 0 auto;
     margin-bottom: 50px;
@@ -14,7 +14,7 @@
 
 .adopt-form__title {
     text-align: center;
-    color: #2c3e50;
+    color: var(--link-color);
     margin-bottom: 30px;
     font-size: 2.2em;
     font-weight: 700;
@@ -29,7 +29,7 @@
     display: block;
     margin-bottom: 8px;
     font-weight: 600;
-    color: #4a6c8e;
+    color: var(--link-color);
     font-size: 1.05em;
 }
 
@@ -66,7 +66,7 @@
 }
 
 .adopt-form__button {
-    background-color: #3498db;
+    background-color: #0E1F35;
     color: white;
     padding: 14px 20px;
     border: none;
@@ -80,13 +80,13 @@
 }
 
 .adopt-form__button:hover {
-    background-color: #2980b9;
+    background-color: #1d3557;
     transform: translateY(-2px);
 }
 
 .adopt-form__button:active {
     transform: translateY(0);
-    background-color: #2471a3;
+    background-color:  #264877;
 }
 
 .adopt-form__message {
