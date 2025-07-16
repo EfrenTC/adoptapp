@@ -6,6 +6,8 @@ import Header from './components/Header/Header';
 import Donation from  './pages/Donation/Donation';
 import Slider from './components/Slider/Slider';
 
+
+
 function App() {
   return (
 

@@ -6,10 +6,35 @@
 }
 
 body {
-  font-family: system-ui, sans-serif;
-  background-color: #ffffff;
-  color: #2B2D57;
-  line-height: 1.5;
+font-family: system-ui, sans-serif;
+background-color: #e0f2fe;
+line-height: 1.5;
 }
 
 
+
+body.light {
+  --bg-color:  #e0f2fe;
+  --text-color: #1a1a1a;
+  --nav-bg: #b3d7e5;
+  --link-color: #333;
+  --button-bg: #f87171;
+  --button-text: #fff;
+}
+
+/* --- Tema oscuro --- */
+body.dark {
+  --bg-color: #1a2634;
+  --text-color: #e0e0e0;
+  --nav-bg: #243447;
+  --link-color: #ccc;
+  --button-bg: #bb86fc;
+  --button-text: #000;
+}
+
+/* Aplica las variables */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
