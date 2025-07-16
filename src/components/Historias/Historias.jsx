@@ -39,7 +39,7 @@ const Historias = () => {
                     <article
                         key={story.id}
                         className="historia-articulo"
-                        style={{ animationDelay: "1s" }} 
+                        style={{ animationDelay: "0.25s"}} 
                     >
                         <img src={story.imageUrl} alt={story.title} className="historia-articulo__imagen" />
                         <h2 className="historia-articulo__titulo">{story.title}</h2>
