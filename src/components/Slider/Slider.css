@@ -34,8 +34,8 @@
   max-width: 200px;
   margin: 20px auto;
   padding: 10px 20px;
-  background-color: #B3D7E5;
-  color: #0e1f35;
+  background-color: #0E1F35;
+  color: #f0f4f8;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -45,13 +45,13 @@
 }
 
 .cat__slider-button:hover {
-  background-color: #A0C4D8;
+  background-color: #1d3557;
   transform: scale(1.05);
 }
 
 .cat-coverflow__title {
   text-align: center;
-  font-size: 24px;
-  color: #0e1f35;
+
+  color: var(--link-color);
   margin-bottom: 20px;
 }
