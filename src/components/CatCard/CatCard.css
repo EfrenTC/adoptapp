@@ -71,13 +71,13 @@
 .cat-card__name {
   margin: 12px 0 4px;
   font-size: 20px;
-  color: #222;
+  color: var(--link-color);
 }
 
 .cat-card__breed {
   margin: 0 0 12px;
   font-size: 16px;
-  color: #555;
+  color: var(--link-color);
 }
 
 .cat-card__button {

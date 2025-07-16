@@ -27,8 +27,7 @@
 }
 
 .card-tip__titulo {
-    color: #87bdd8;
-    font-size: 1.2rem;
+    color: var(--link-color);
     font-weight: bold;
     margin: 20px 20px 20px;
     text-align: center;
@@ -36,8 +35,8 @@
 }
 
 .card-tip__texto {
-    color: #222;
-    font-size: 0.95rem;
+    color: var(--link-color);
+    font-size: 1rem;
     text-align: left;
     white-space: pre-line; 
 }
