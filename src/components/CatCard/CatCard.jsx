@@ -5,7 +5,6 @@ const CatCard = ({
   name,
   breed,
   imageUrl,
-  backgroundColor = '#ffff',
   onAdoptClick,
   className = '',
   isFavoriteView = false,
@@ -33,7 +32,7 @@ const CatCard = ({
       cat.imageUrl === imageUrl
     );
     if (!exists) {
-      favs.push({ name, breed, imageUrl, backgroundColor });
+      favs.push({ name, breed, imageUrl });
       localStorage.setItem('favCats', JSON.stringify(favs));
     }
   }
@@ -84,7 +83,7 @@ const CatCard = ({
         />
       </div>
 
-      <div className="cat-card__info" style={{ backgroundColor }}>
+      <div className="cat-card__info">
         <h2 className="cat-card__name">{name}</h2>
         <p className="cat-card__breed">{breed}</p>
         <button onClick={onAdoptClick} className="cat-card__button">

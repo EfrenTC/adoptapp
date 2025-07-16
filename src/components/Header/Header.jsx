@@ -1,6 +1,6 @@
 import React, { useState, useContext } from "react";
 import "./Header.css";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/logo2.svg";
 import { Link } from 'react-router-dom';
 import { ThemeContext } from '../ThemeContext/ThemeContext.jsx';
 import Toggle from '../ThemeContext/ThemeToggle.jsx';

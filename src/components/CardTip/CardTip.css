@@ -5,7 +5,7 @@
     padding: 20px;
     text-align: center;
     font-family: 'Segoe UI', sans-serif;
-    background-color: white;
+    background-color: var(--container-bg);
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.08);
     border-radius: 8px;
     transition: transform 0.2s ease-in-out, box-shadow 0.2 ease-in-out;
@@ -27,8 +27,7 @@
 }
 
 .card-tip__titulo {
-    color: #87bdd8;
-    font-size: 1.2rem;
+    color: var(--link-color);
     font-weight: bold;
     margin: 20px 20px 20px;
     text-align: center;
@@ -36,8 +35,8 @@
 }
 
 .card-tip__texto {
-    color: #222;
-    font-size: 0.95rem;
+    color: var(--link-color);
+    font-size: 1rem;
     text-align: left;
     white-space: pre-line; 
 }
