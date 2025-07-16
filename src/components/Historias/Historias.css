@@ -23,14 +23,14 @@
 }
 
 .historia-articulo {
-  border: 1px solid #e0e0e0;
+  border: 1px ;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
   padding: 25px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  background-color: white;
+  background-color: var(--container-bg);
 }
 
 .historia-articulo__imagen {
