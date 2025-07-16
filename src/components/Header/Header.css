@@ -17,6 +17,7 @@
 
 .header__logo-img {
   height: 70px;
+  fill: white !important;
 }
 
 .header__brand {
