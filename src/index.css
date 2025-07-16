@@ -24,9 +24,9 @@ body.light {
 
 /* --- Tema oscuro --- */
 body.dark {
-  --bg-color: #121212;
+  --bg-color: #1a2634;
   --text-color: #e0e0e0;
-  --nav-bg: #164c61;
+  --nav-bg: #243447;
   --link-color: #ccc;
   --button-bg: #bb86fc;
   --button-text: #000;
@@ -38,4 +38,3 @@ body {
   color: var(--text-color);
   transition: background-color 0.3s ease, color 0.3s ease;
 }
-
