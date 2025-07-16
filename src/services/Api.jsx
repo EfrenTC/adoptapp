@@ -8,14 +8,13 @@ export default function Api() {
   const [loading, setLoading] = useState(true);
   const navigate = useNavigate();
 
-
   const apiKey = import.meta.env.VITE_CAT_API_KEY;
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-     
-        const catRes = await fetch('https://api.thecatapi.com/v1/images/search?limit=10', {
+
+        const catRes = await fetch('https://api.thecatapi.com/v1/images/search?limit=10&has_breeds=1', {
           headers: {
             'x-api-key': apiKey
           }
