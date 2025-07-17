@@ -1,6 +1,6 @@
 .contact {
   min-height: 80vh;
-  background: linear-gradient(135deg, #f8fafc 0%, #e0f2fe 50%, #e0e7ff 100%);
+  background: var(--bg-color);
   padding: 3rem 1rem;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -14,14 +14,14 @@
 .contact__title {
   font-size: 3rem;
   font-weight: 700;
-  color: #111827;
+  color: var(--link-color);
   margin-bottom: 1rem;
   line-height: 1.2;
 }
 
 .contact__subtitle {
   font-size: 1.25rem;
-  color: #4b5563;
+  color: var(--link-color);
   max-width: 32rem;
   margin: 0 auto;
   line-height: 1.6;
@@ -76,10 +76,10 @@
 }
 
 .contact__card {
-  background-color: white;
+  background-color: var(--container-bg);
   border-radius: 0.75rem;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-  border: 1px solid #f3f4f6;
+  border: 1px;
   overflow: hidden;
   flex: 1;
   display: flex;
@@ -118,7 +118,7 @@
 .contact__label {
   font-size: 0.875rem;
   font-weight: 600;
-  color: #111827;
+  color: var(--link-color);
 }
 
 .contact__input,
@@ -128,8 +128,8 @@
   border: 1px solid #d1d5db;
   border-radius: 0.5rem;
   font-size: 1rem;
-  color: #111827;
-  background-color: white;
+  color: var(--link-color);
+  background-color: #f0f4f8;
   transition: all 0.2s ease;
   box-sizing: border-box;
 }
