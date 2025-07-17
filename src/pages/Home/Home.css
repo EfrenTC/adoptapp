@@ -13,8 +13,8 @@
   height: auto;  
   padding: 20px;
   width: 850px;
-  background-color: #ffffff;
-  border: 1px solid #f3f4f6;
+  background-color: var(--nav-bg);
+  border: 1px;
   border-radius: 1rem;
   margin: 0 auto;
   margin-bottom: 50px;
