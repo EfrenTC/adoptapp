@@ -35,7 +35,9 @@ const Header = () => {
   className="header__nav-link header__nav-link--icon"
   title="Ver favoritos"
   aria-label="Ver favoritos">
-    Favoritos
+    
+    <span style={{ marginRight: "0.4rem" }}>Favoritos</span>
+      
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
