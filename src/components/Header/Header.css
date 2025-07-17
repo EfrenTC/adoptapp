@@ -33,7 +33,7 @@
 
 .header__nav-link {
   padding: 8px 16px;
-  color: #0e1f35;
+  color: var(--link-color);
   font-weight: bold;
   text-decoration: none;
   transition: all 0.2s ease-in-out;
