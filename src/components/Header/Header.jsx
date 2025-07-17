@@ -1,14 +1,20 @@
 import React from "react";
 import "./Header.css";
-import { useState } from "react";
-import logo from "../../assets/logo.png";
+import { useState, useContext } from "react";
+import logo1 from "../../assets/logo1.png";
+import logo3 from "../../assets/logo3.png";
 import { Link } from 'react-router-dom';
+import { ThemeContext } from "../ThemeContext/ThemeContext";
+import Toggle from '../ThemeContext/ThemeToggle.jsx'
+
 
 
 const Header = () => {
-    const [menuAbierto, setMenuAbierto] = useState(false);
+  const [menuAbierto, setMenuAbierto] = useState(false);
+  const { theme } = useContext(ThemeContext);
 
-    const toggleMenu = () => setMenuAbierto(!menuAbierto);
+  const toggleMenu = () => setMenuAbierto(!menuAbierto);
+  const logo = theme === "dark" ? logo3 : logo1;
 
     return (
         <div className="header">
@@ -50,8 +56,9 @@ const Header = () => {
 
   <Link to="/contacto" className="header__nav-link">Contacto</Link>
   <Link to="/donar" className="header__donar-btn">DONAR</Link>
-</nav>
+  <Toggle></Toggle>
 
+</nav>
 
 
 
