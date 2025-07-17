@@ -1,6 +1,7 @@
 import React from 'react';
 import CardTip from '../../components/CardTip/CardTip';
 import "./Tips.css";
+// Importar solo los assets utilizados en el array de tips.
 import gatoMaleta from '../../assets/img/Gato-maleta.png';
 import gatoComida from '../../assets/img/gato-comida.png';
 import gatoMuebles from '../../assets/img/gato-muebles.png';
@@ -9,6 +10,7 @@ import gatoJuguete from '../../assets/img/gato-juguete.png';
 
 const tips = [
     {
+        // NO HAY 'id' AQUÍ, como lo tenías originalmente
         imagen: gatoMaleta,
         titulo: "¿Qué debes tener en cuenta si vas a viajar con tu gato?",
         texto: `Salud y papeles: Asegúrate de que esté sano y con todas sus vacunas y documentos al día.
@@ -43,23 +45,27 @@ Durante el viaje: Lleva un transportín, minimiza el tiempo que esté solo y man
     {
         imagen: gatoJuguete,
         titulo: "Los mejores juguetes para gatos",
-        texto: 'Nuestra mascota es única y esto se vuelve aún más cierto con los felinos. Por esa razón, siempre queremos comprar los mejores juguetes para gatos, siempre pensando en su diversión y en lo feliz que se sentirán una vez los descubra. Recuerda que cada gato es diferente y cuenta con su personalidad propia, por cual a la hora de elegir los mejores juguetes para gatos debes tener en cuenta lo que le gusta o con las cosas que más le entretiene.         Ratones de juguetes: Suelen estar fabricados de múltiples materiales entre ellos tela, plástico e incluso madera. No obstante, esta es una opción que no entretiene mucho a los felinos. Paz suave: Los peces suaves con diseños realistas siempre serán una buena opción de juguetes para tu gato, sobre todo porque son interactivos y algunos de ellos cuentan con sensores táctiles incorporados.         Juguetes con plumas: Todos estos juguetes han sido fabricados libres de todo elemento tóxico, por lo cual son muy seguros para tu gato. Además, son muy resistentes, duraderos y cualquier persona los puede manejar.'
+        texto: 'Nuestra mascota es única y esto se vuelve aún más cierto con los felinos. Por esa razón, siempre queremos comprar los mejores juguetes para gatos, siempre pensando en su diversión y en lo feliz que se sentirán una vez los descubra. Recuerda que cada gato es diferente y cuenta con su personalidad propia, por cual a la hora de elegir los mejores juguetes para gatos debes tener en cuenta lo que le gusta o con las cosas que más le entretiene.          Ratones de juguetes: Suelen estar fabricados de múltiples materiales entre ellos tela, plástico e incluso madera. No obstante, esta es una opción que no entretiene mucho a los felinos. Paz suave: Los peces suaves con diseños realistas siempre serán una buena opción de juguetes para tu gato, sobre todo porque son interactivos y algunos de ellos cuentan con sensores táctiles incorporados.          Juguetes con plumas: Todos estos juguetes han sido fabricados libres de todo elemento tóxico, por lo cual son muy seguros para tu gato. Además, son muy resistentes, duraderos y cualquier persona los puede manejar.'
     },
 ];
 
 const Tips = () => {
     return (
-        <main className="tips">
-            {tips.map((card, i) => (
-                <CardTip
-                key={i}
-                imagen={card.imagen}
-                titulo={card.titulo}
-                texto={card.texto}
-                />
-            ))}
+        <main className="tips-pagina">
+            <div className="tips-pagina__contenedor-cuerpo">
+                {tips.map((card, index) => ( // Seguimos usando 'index' aquí
+                    <CardTip
+                        key={index} 
+                        imagen={card.imagen}
+                        titulo={card.titulo}
+                        texto={card.texto}
+                        className="tip-card-animacion"
+                         style={{ animationDelay: "0.25s"}} 
+                    />
+                ))}
+            </div>
         </main>
     );
 };
 
-export default Tips
+export default Tips;
