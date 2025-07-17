@@ -4,6 +4,7 @@ import logo from "../../assets/logo2.svg";
 import { Link } from 'react-router-dom';
 import { ThemeContext } from '../ThemeContext/ThemeContext.jsx';
 import Toggle from '../ThemeContext/ThemeToggle.jsx';
+import LanguageSwitcher from "../LanguageSwitcher/LanguageSwitcher.jsx";
 
 const Header = () => {
   const [menuAbierto, setMenuAbierto] = useState(false);
@@ -52,11 +53,13 @@ const Header = () => {
         </Link>
 
         <Link to="/contacto" className="header__nav-link">Contacto</Link>
-        <Link to="/donar" className="header__donar-btn">DONAR</Link>
+    </nav>
 
- 
+    <div className="header__actions">
+        <Link to="/donar" className="header__donar-btn">DONAR</Link>
         <Toggle></Toggle>
-      </nav>
+        <LanguageSwitcher></LanguageSwitcher>
+      </div>
     </div>
   );
 };

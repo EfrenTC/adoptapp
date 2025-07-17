@@ -96,6 +96,12 @@
   border-radius: 2px;
 }
 
+.header__actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
 @media (max-width: 768px) {
   .header__burger {
     display: flex;
@@ -110,6 +116,10 @@
 
   .header__nav--open {
     display: flex;
+  }
+
+  .header__actions {
+    gap: 10px; 
   }
 
   .header__donar-btn {
