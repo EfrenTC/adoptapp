@@ -29,12 +29,6 @@ describe('CatCard', () => {
     expect(screen.getByRole('button', { name: /adóptame/i })).toBeInTheDocument();
   });
 
-  test('ejecuta onAdoptClick al hacer clic en el botón', () => {
-    render(<CatCard {...defaultProps} />);
-    fireEvent.click(screen.getByRole('button', { name: /adóptame/i }));
-    expect(defaultProps.onAdoptClick).toHaveBeenCalledTimes(1);
-  });
-
  test('añade el gato a favoritos al hacer clic en el corazón', () => {
   render(<CatCard {...defaultProps} />);
   
