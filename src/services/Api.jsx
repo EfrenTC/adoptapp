@@ -14,14 +14,14 @@ export default function Api() {
     const fetchData = async () => {
       try {
 
-        const catRes = await fetch('https://api.thecatapi.com/v1/images/search?limit=10&has_breeds=1', {
+        const catRes = await fetch('https://api.thecatapi.com/v1/images/search?limit=12&has_breeds=1', {
           headers: {
             'x-api-key': apiKey
           }
         });
         const cats = await catRes.json();
 
-        const nameRes = await fetch('https://randomuser.me/api/?results=10');
+        const nameRes = await fetch('https://randomuser.me/api/?results=12');
         const namesJson = await nameRes.json();
         const names = namesJson.results.map((user) => `${user.name.first}`);
 

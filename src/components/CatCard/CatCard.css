@@ -120,8 +120,9 @@
 }
 
 .cat-card__modal {
-  background-color: #fff;
+  background-color: var(--container-bg);
   padding: 2rem;
+  color: var(--link-color);
   border-radius: 8px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.3);
   text-align: center;
@@ -150,7 +151,7 @@
 }
 
 .cat-card__modal-buttons button:last-child {
-  background-color: #3b82f6;
-  color: white;
+  background-color: #0E1F35;
+  color: #f0f4f8 ;
 }
 
