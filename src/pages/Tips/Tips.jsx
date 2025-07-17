@@ -40,7 +40,7 @@ const tipsData = [
 ];
 
 const Tips = () => {
-    const { t, i18n } = useTranslation(); 
+    const { t} = useTranslation(); 
 
     return (
         <main className="tips-pagina">
