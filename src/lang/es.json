@@ -12,6 +12,16 @@
         "language_selector": ""
     },
 
+     "nav": {
+        "home": "Inicio",
+        "adopt": "Adopta",
+        "tips": "Consejos",
+        "stories": "Historias",
+        "favorites": "Favoritos",
+        "contact": "Contacto",
+        "donate": "DONAR"
+    },
+
     "common": {
     "english": "Inglés 🇬🇧",
     "spanish": "Español 🇪🇸"
