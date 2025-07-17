@@ -1,6 +1,6 @@
 .work {
   min-height: 80vh;
-  background: linear-gradient(135deg, #f8fafc 0%, #e0f2fe 50%, #e0e7ff 100%);
+  background: var(--bg-color);
   padding: 2rem 1rem;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -14,14 +14,14 @@
 .work__title {
   font-size: 3rem;
   font-weight: 700;
-  color: #111827;
+  color: var(--link-color);
   margin-bottom: 1rem;
   line-height: 1.2;
 }
 
 .work__subtitle {
   font-size: 1.25rem;
-  color: #4b5563;
+  color: var(--link-color);
   max-width: 32rem;
   margin: 0 auto;
   line-height: 1.6;
@@ -64,10 +64,10 @@
 }
 
 .work__form-card {
-  background-color: white;
+  background-color: var(--container-bg);
   border-radius: 1rem;
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-  border: 1px solid #f3f4f6;
+  border: 1px;
   overflow: hidden;
 }
 
@@ -90,7 +90,7 @@
 .work__label {
   font-size: 0.875rem;
   font-weight: 600;
-  color: #111827;
+  color: var(--link-color);
 }
 
 .work__optional {
@@ -134,8 +134,8 @@
 
 .work__submit-button {
   width: 100%;
-  background-color: #4f46e5;
-  color: white;
+  background-color: #0E1F35;
+  color: #f0f4f8;
   padding: 0.75rem 1.5rem;
   border-radius: 0.5rem;
   font-weight: 600;
@@ -147,7 +147,7 @@
 }
 
 .work__submit-button:hover:not(:disabled) {
-  background-color: #4338ca;
+  background-color: #1d3557;
   transform: translateY(-1px) scale(1.02);
 }
 
@@ -209,7 +209,7 @@
 
 .work__footer-text {
   font-size: 0.875rem;
-  color: #6b7280;
+  color: var(--link-color);
   margin: 0;
 }
 

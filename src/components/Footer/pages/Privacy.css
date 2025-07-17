@@ -1,10 +1,10 @@
 .privacy {
-  background: linear-gradient(135deg, #f8fafc 0%, #e0f2fe 50%, #e0e7ff 100%);
+  background: var(--bg-color);
   min-height: 100vh;
   padding: 2rem 2rem;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   box-sizing: border-box;
-  color: #111827;
+  color: var(--link-color);
 }
 
 .privacy__content {
@@ -17,7 +17,7 @@
   font-weight: 700;
   text-align: center;
   margin-bottom: 3rem;
-  color: #1f2937;
+  color: var(--link-color);
 }
 
 .privacy__section {
@@ -28,18 +28,18 @@
   font-size: 1.5rem;
   font-weight: 600;
   margin-bottom: 1rem;
-  color: #1f2937;
+  color: var(--link-color);
 }
 
 .privacy__text {
   font-size: 1.1rem;
-  color: #374151;
+  color: var(--link-color);
   line-height: 1.8;
 }
 
 .privacy__date {
   font-size: 0.95rem;
-  color: #6b7280;
+  color: var(--link-color);
   display: block;
   margin-top: 3rem;
   text-align: center;
