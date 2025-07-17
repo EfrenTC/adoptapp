@@ -1,10 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import './Historias.css';
 import Angela from '../../assets/angela.jpg';
 import Gato from '../../assets/gato.png';
 
 const Historias = () => {
+ 
     const storiesData = [
         {
             id: 's1',
@@ -28,14 +28,19 @@ const Historias = () => {
             id: 's4',
             title: 'Sobrepoblación : La Esterilización Salva Vidas',
             content: ' Enfrentabamos una crisis de sobrepoblación de gatitos abandonados cada primavera. Sin embargo, este año, una intensa campaña de concienciación sobre la esterilización felina liderada por voluntarios como Diego, cambió la situación Gracias a la campaña, menos camadas de gatitos llegaron al refugio, aliviando la presión sobre sus recursos y aumentando las posibilidades de adopción para los gatos existentes. Historias como la de "Luna", una gata callejera que fue esterilizada tras tener sus crías.',
-            imageUrl: 'https://img.nbc.com/files/scet/photos/22/11728/Angelas_cats_03.JPG?impolicy=nbc_com&imwidth=1080&imdensity=1' ,
+            imageUrl: 'https://img.nbc.com/files/scet/photos/22/11728/Angelas_cats_03.JPG?impolicy=nbc_com&imwidth=1080&imdensity=1',
         },
     ];
+
     return (
         <div className="historias-pagina">
             <div className="historias-pagina__contenedor-cuerpo">
-                {storiesData.map(story => (
-                    <article key={story.id} className="historia-articulo">
+                {storiesData.map((story) => (
+                    <article
+                        key={story.id}
+                        className="historia-articulo"
+                        style={{ animationDelay: "0.25s"}} 
+                    >
                         <img src={story.imageUrl} alt={story.title} className="historia-articulo__imagen" />
                         <h2 className="historia-articulo__titulo">{story.title}</h2>
                         <p className="historia-articulo__texto">{story.content}</p>

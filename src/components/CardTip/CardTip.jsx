@@ -1,7 +1,8 @@
 import React from "react";
 import './CardTip.css';
 
-const CardTip = ({imagen, titulo, texto}) => {
+// MODIFICACIÓN CLAVE AQUÍ: Acepta 'className' y 'style' como props adicionales
+const CardTip = ({ imagen, titulo, texto, className, style }) => { 
     return (
         <div className="card-tip">
             <img src={imagen} alt="{titulo}" className="card-tip__img"/>
