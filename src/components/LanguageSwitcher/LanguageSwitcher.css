@@ -1,6 +1,7 @@
 /* Bloque: .language-switcher-button */
 .language-switcher-button {
   padding: 8px 15px;
+  width: fit-content;
   border: 1px solid var(--text-color); 
   border-radius: 20px; /* Bordes redondeados */
   background-color: transparent; /* Fondo transparente por defecto */
