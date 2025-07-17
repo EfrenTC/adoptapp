@@ -28,6 +28,19 @@
         "thanksMessage": "Thank you for helping give our kittens a home",
         "rightsReserved": "All rights reserved"
     },
+    "home": {
+        "title": "What do we do?",
+        "intro": "In the green heart of Asturias, a project full of love, commitment, and hope is born. We are an initiative dedicated to rescuing, caring for, and finding permanent homes for kittens.",
+        "point1": "🐱 Real adoption stories that changed the lives of both cats and the people who welcomed them.",
+        "point2": "💡 Helpful tips for responsible cat care, from preparing for adoption to health, nutrition, and behavior.",
+        "point3": "❤️ A donation section where you can help us continue providing veterinary care, food, shelter, and love to all the kittens who need it.",
+        "point4": "📍 All of this from Asturias, working with shelters, foster homes, and volunteers who dedicate their time and hearts to animal welfare.",
+        "closing": "Every time you visit our website, share a post, or donate, you help us save lives."
+    },
+    "slider": {
+        "title": "¡Meet your future cat friend!",
+        "button": "See all kittens"
+    },
     "common": {
         "english": "English 🇬🇧",
         "spanish": "Spanish 🇪🇸"

@@ -28,6 +28,19 @@
         "thanksMessage": "Gracias por ayudar a darles un hogar a nuestros gatitos",
         "rightsReserved": "Todos los derechos reservados"
     },
+    "home": {
+        "title": "¿Qué hacemos?",
+        "intro": "En el corazón verde de Asturias nace un proyecto lleno de amor, compromiso y esperanza. Somos una iniciativa dedicada a rescatar, cuidar y buscar un hogar definitivo para gatitos.",
+        "point1": "🐱 Historias reales de adopciones que han sido un antes y un después tanto para los gatos como para las personas que los acogieron.",
+        "point2": "💡 Consejos útiles para el cuidado responsable de un gato, desde cómo prepararte para la adopción hasta salud, alimentación y comportamiento.",
+        "point3": "❤️ Una sección de donaciones, donde puedes colaborar para que podamos seguir ofreciendo atención veterinaria, alimento, refugio y cariño a todos los gatitos que lo necesitan.",
+        "point4": "📍 Y todo esto desde Asturias, trabajando con protectoras, casas de acogida y voluntarios que día a día ponen su tiempo y corazón al servicio de los animales.",
+        "closing": "Cada vez que visitas nuestra web, compartes una publicación o haces una donación, nos ayudas a salvar vidas."
+    },
+      "slider": {
+    "title": "¡Conoce a tu futuro amichi!",
+    "button": "Ver todos los gatitos"
+  },
     "common": {
         "english": "Inglés 🇬🇧",
         "spanish": "Español 🇪🇸"

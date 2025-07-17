@@ -6,10 +6,12 @@ import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import './Slider.css';
+import { useTranslation } from "react-i18next";
 
 import { EffectCoverflow, Pagination, Autoplay } from 'swiper/modules';
 const Slider = () => {
  const [cats, setCats] = useState([]);
+ const { t } = useTranslation();
 
   useEffect(() => {
     const fetchCats = async () => {
@@ -25,9 +27,11 @@ const Slider = () => {
     fetchCats();
   }, []);
 
+
+
   return (
     <div className="cat-coverflow">
-      <h1 className='cat-coverflow__title'>¡Conoce a tu futuro amichi!</h1>
+    <h1 className="cat-coverflow__title">{t("slider.title")}</h1>
       <Swiper
         effect="coverflow"
         grabCursor={true}
@@ -54,7 +58,7 @@ const Slider = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-      <Link to="/adopcion" className="cat__slider-button">Ver todos los gatitos</Link>
+      <Link to="/adopcion" className="cat__slider-button">{t("slider.button")}</Link>
     </div>
   );
 }
