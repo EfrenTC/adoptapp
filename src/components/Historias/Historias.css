@@ -16,14 +16,14 @@
 }
 
 .historia-articulo {
-  border: 1px solid #e0e0e0;
+  border: 1px ;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
   padding: 25px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  background-color: white;
+background-color: var(--container-bg);
   opacity: 0;
   transform: translateY(20px);
   animation: fadeInSlideUpArticle 0.8s ease-out forwards;
@@ -45,6 +45,7 @@
 
 .historia-articulo:hover {
   transform: translateY(-10px);
+  
 }
 
 .historia-articulo__imagen {
@@ -56,9 +57,16 @@
   display: block;
 }
 
+.historia-articulo__titulo {
+  color: var(--link-color);
+  font-size: 1.6em;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
 .historia-articulo__texto {
   line-height: 1.7;
-  color: #555;
+  color: var(--link-color);
   margin-bottom: 20px;
   flex-grow: 1;
   text-align: start;

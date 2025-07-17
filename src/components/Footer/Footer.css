@@ -32,7 +32,7 @@
 }
 
 .footer__link {
-  color: #2B2D57;
+  color: var(--link-color);
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease, text-decoration 0.3s ease;
@@ -56,11 +56,13 @@
   font-size: 1rem;
   font-style: italic;
   margin: 0;
+  color: var(--link-color);
 }
 
 .footer__copy {
   font-size: 0.85rem;
   margin: 0;
+  color: var(--link-color);
 }
 
 .footer__icon {
