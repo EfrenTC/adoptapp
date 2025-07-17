@@ -162,7 +162,7 @@
 .contact__submit-button {
   width: auto;
   min-width: 200px;
-  background-color: #4f46e5;
+  background-color: #0E1F35;
   color: white;
   padding: 0.75rem 2rem;
   border-radius: 0.5rem;
@@ -175,7 +175,7 @@
 }
 
 .contact__submit-button:hover:not(:disabled) {
-  background-color: #4338ca;
+  background-color: #1d3557;
   transform: translateY(-1px) scale(1.02);
 }
 
