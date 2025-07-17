@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import Card from '../components/CatCard/CatCard'
-import './Api.css'
+import Card from '../components/CatCard/CatCard';
+import './Api.css';
 import { useNavigate } from 'react-router-dom'; 
 
 export default function Api() {
@@ -8,19 +8,23 @@ export default function Api() {
   const [loading, setLoading] = useState(true);
   const navigate = useNavigate();
 
+  const apiKey = import.meta.env.VITE_CAT_API_KEY;
+
   useEffect(() => {
     const fetchData = async () => {
       try {
-        //  Obtención de las imágenes de los gatos con la llamada la api
-        const catRes = await fetch('https://api.thecatapi.com/v1/images/search?limit=10');
+
+        const catRes = await fetch('https://api.thecatapi.com/v1/images/search?limit=10&has_breeds=1', {
+          headers: {
+            'x-api-key': apiKey
+          }
+        });
         const cats = await catRes.json();
 
-        // Obtención de nombres aleatorios para asociarlos a los gatos
         const nameRes = await fetch('https://randomuser.me/api/?results=10');
         const namesJson = await nameRes.json();
-        const names = namesJson.results.map((user) => user.name.first);
+        const names = namesJson.results.map((user) => `${user.name.first}`);
 
-        // Combinación de los arrays
         const combined = cats.map((cat, index) => ({
           ...cat,
           name: names[index] || 'Gatito'
@@ -35,39 +39,38 @@ export default function Api() {
     };
 
     fetchData();
-  }, []);
+  }, [apiKey]);
 
- if (loading) {
-  return (
-    <div className="spinner__container">
-      <div className="spinner"></div>
-    </div>
-  );
-}
+  if (loading) {
+    return (
+      <div className="spinner__container">
+        <div className="spinner"></div>
+      </div>
+    );
+  }
 
-if (!data || data.length === 0) {
-  return (
-    <div className="nodata__container">
-      <p className="nodata__message">No se encontraron gatitos</p>
-    </div>
-  );
-}
-
+  if (!data || data.length === 0) {
+    return (
+      <div className="nodata__container">
+        <p className="nodata__message">No se encontraron gatitos</p>
+      </div>
+    );
+  }
 
   return (
     <div className="cards__container">
-    {data.map((cat, idx) => (
-      <Card
-        key={idx}
-        name={cat.name}
-        breed={cat.breeds && cat.breeds[0] ? cat.breeds[0].name : 'Desconocida'}
-        imageUrl={cat.url}
-        onAdoptClick={() => {
-          alert(`Vas a adoptar a ${cat.name}`);
-          navigate('/formulario-adopcion');
-        }}
-      />
-    ))}
-  </div>
+      {data.map((cat, idx) => (
+        <Card
+          key={idx}
+          name={cat.name}
+          breed={cat.breeds && cat.breeds[0] ? cat.breeds[0].name : 'Desconocida'}
+          imageUrl={cat.url}
+          onAdoptClick={() => {
+            alert(`Vas a adoptar a ${cat.name}`);
+            navigate('/formulario-adopcion');
+          }}
+        />
+      ))}
+    </div>
   );
 }
