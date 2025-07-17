@@ -13,10 +13,10 @@ const About = () => {
 
       <section className="about__cards-grid">
         <article className="team-card">
-          <img src="/img/ivan.jpg" alt="Iván" className="team-card__profile-pic" />
+          <img src="/src/assets/ivan.jpg" alt="Iván" className="team-card__profile-pic" />
           <h2 className="team-card__name">Iván</h2>
           <p className="team-card__description">
-            Especialista en backend con Laravel, Node.js y MySQL. Le encanta automatizar procesos y asegurar una buena arquitectura de código.
+            Fullstack especialista en backend con Laravel, Node.js y MySQL. Le encanta automatizar procesos y asegurar una buena arquitectura de código.
           </p>
         </article>
 

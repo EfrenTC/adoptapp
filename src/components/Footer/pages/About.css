@@ -1,6 +1,6 @@
 .about {
   min-height: 87vh;
-  background: linear-gradient(135deg, #f8fafc 0%, #e0f2fe 50%, #e0e7ff 100%);
+  background: var(--bg-color);
   padding: 3rem 1rem;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   box-sizing: border-box;
@@ -16,14 +16,14 @@
 .about__title {
   font-size: 3rem;
   font-weight: 700;
-  color: #111827;
+  color: var(--link-color);
   margin-bottom: 1.5rem;
   line-height: 1.2;
 }
 
 .about__intro {
   font-size: 1.1rem;
-  color: #374151;
+  color: var(--link-color);
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
@@ -46,8 +46,8 @@
 
 
 .team-card {
-  background-color: #ffffff;
-  border: 1px solid #f3f4f6;
+  background-color: var(--container-bg);
+  border: 1px;
   border-radius: 1rem;
   padding: 2rem 1.5rem;
   text-align: center;
@@ -67,17 +67,16 @@
   object-fit: cover;
   border-radius: 50%;
   margin-bottom: 1rem;
-  border: 3px solid #93c5fd;
+  border: 3px solid #0E1F35;
 }
 
 .team-card__name {
   font-size: 1.25rem;
   margin-bottom: 0.5rem;
-  color: #1f2937;
+  color: var(--link-color);
 }
 
 .team-card__description {
-  font-size: 1rem;
-  color: #374151;
+  color: var(--link-color);
   line-height: 1.5;
 }
