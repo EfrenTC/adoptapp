@@ -104,24 +104,15 @@
 }
 
 .adopt-form__button:hover {
-<<<<<<< HEAD
     background-color: #2980b9;
     transform: translateY(-3px); 
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); 
-=======
-    background-color: #1d3557;
-    transform: translateY(-2px);
->>>>>>> dev
 }
 
 .adopt-form__button:active {
     transform: translateY(0);
-<<<<<<< HEAD
     background-color: #2471a3;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-=======
-    background-color:  #264877;
->>>>>>> dev
 }
 
 

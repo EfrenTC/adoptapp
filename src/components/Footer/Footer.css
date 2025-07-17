@@ -1,9 +1,11 @@
 .footer {
+    position: relative; 
   background-color: var(--nav-bg);
   padding: 30px 20px;
   font-family: 'Segoe UI', sans-serif;
   color: #2B2D57;
   box-sizing: border-box;
+;
 }
 
 .footer__container {
@@ -70,6 +72,30 @@
   min-width: 24px;
 }
 
+.footer__gato {
+  position: absolute;
+  bottom: 100%; /* justo encima del footer */
+  left: 0;
+  bottom: 122px;
+  width: 200px;
+  animation: moverDerecha 7s linear forwards;
+  pointer-events: none;
+  z-index: 10;
+}
+@keyframes moverDerecha {
+  0% {
+    transform: translateX(0);
+  }
+  99% {
+    transform: translateX(1800px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(1700px);
+    opacity: 0;
+  }
+}
+
 
 @media (max-width: 600px) {
   .footer__container {
@@ -87,4 +113,11 @@
     align-items: center;
     text-align: center;
   }
+
+  .footer__gato {
+  animation: none;
+  display: none; 
+  }
+  
 }
+

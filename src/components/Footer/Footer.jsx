@@ -2,12 +2,18 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Footer.css';
 import { useTranslation } from "react-i18next";
+import gato from '../../assets/gatogif.gif';
+
 
 const Footer = () => {
 
   const { t } = useTranslation();
   return (
+    <>
+  
     <footer className="footer">
+       <img src={gato} className='footer__gato'/>
+     
       <div className="footer__container">
         <div className="footer__content">
           <div className="footer__links">
@@ -103,7 +109,9 @@ const Footer = () => {
           </div>
         </div>
       </div>
+ 
     </footer>
+    </>
   );
 };
 
