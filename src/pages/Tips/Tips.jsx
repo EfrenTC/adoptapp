@@ -43,18 +43,21 @@ const Tips = () => {
     const { t, i18n } = useTranslation(); 
 
     return (
-        <div className="tips-page-container"> 
-            <main className="tips"> 
-                {tipsData.map((card) => ( 
+        <main className="tips-pagina">
+            <div className="tips-pagina__contenedor-cuerpo">
+                {tipsData.map((card) => (
                     <CardTip
-                        key={card.id} 
+                        key={card.id}
                         imagen={card.imagen}
-                        titulo={t(card.tituloKey)} 
+                        titulo={t(card.tituloKey)}
                         texto={t(card.textoKey)}
+                        className="tip-card-animacion"
+                        style={{ animationDelay: "0.25s"}}
                     />
                 ))}
-            </main>
-        </div>
+            </div>
+        </main>
+    
     );
 };
 
