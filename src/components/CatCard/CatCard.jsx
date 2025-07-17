@@ -12,6 +12,7 @@ const CatCard = ({
 }) => {
   const [color, setColor] = useState('white');
   const [animateHeart, setAnimateHeart] = useState(false);
+  const [showModal, setShowModal] = useState(false);
 
   useEffect(() => {
     const favs = JSON.parse(localStorage.getItem('favCats')) || [];
@@ -59,9 +60,29 @@ const CatCard = ({
 
   return (
     <div className={`cat-card ${className}`}>
+      {showModal && (
+        <div className="cat-card__modal-overlay">
+          <div className="cat-card__modal">
+            <h3>¿Quieres adoptar a {name}?</h3>
+            <p>Serás redirigido al formulario de adopción.</p>
+            <div className="cat-card__modal-buttons">
+              <button onClick={() => setShowModal(false)}>Cancelar</button>
+              <button
+                onClick={() => {
+                  onAdoptClick(name);
+                  setShowModal(false);
+                }}
+              >
+                Confirmar
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
       <div className="cat-card__heart-container">
         <svg
-          data-testid="heart-icon" //  añadido para los tests
+          data-testid="heart-icon"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
           fill={color}
@@ -87,7 +108,7 @@ const CatCard = ({
       <div className="cat-card__info">
         <h2 className="cat-card__name">{name}</h2>
         <p className="cat-card__breed">{breed}</p>
-        <button onClick={onAdoptClick} className="cat-card__button">
+        <button onClick={() => setShowModal(true)} className="cat-card__button">
           Adóptame
         </button>
       </div>

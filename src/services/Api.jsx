@@ -66,7 +66,6 @@ export default function Api() {
           breed={cat.breeds && cat.breeds[0] ? cat.breeds[0].name : 'Desconocida'}
           imageUrl={cat.url}
           onAdoptClick={() => {
-            alert(`Vas a adoptar a ${cat.name}`);
             navigate('/formulario-adopcion');
           }}
         />
