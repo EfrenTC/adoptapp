@@ -32,7 +32,7 @@ describe('CatCard', () => {
  test('añade el gato a favoritos al hacer clic en el corazón', () => {
   render(<CatCard {...defaultProps} />);
   
-  const heartIcon = screen.getByTestId('heart-icon'); // mejor selector
+  const heartIcon = screen.getByTestId('heart-icon');
   fireEvent.click(heartIcon);
 
   // Esperar hasta que se actualice localStorage

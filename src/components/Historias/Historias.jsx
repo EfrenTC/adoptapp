@@ -15,7 +15,7 @@ const Historias = () => {
         {
             id: 's2',
             title: 'Voluntarios: Héroes anónimos',
-            content: ' Angela, una jubilada con una energía inagotable, es un claro ejemplo de estos héroes anónimos. Viene al refugio cinco días a la semana, sin falta. Conoce a cada gato por su nombre y su historia, y es experta en sacar un ronroneo incluso al más arisco. Pasa horas acariciando a los gatos más tímidos para ayudarles a superar su miedo, y se encarga de administrar medicamentos a aquellos que lo necesitan. Su dedicación es inmensurable.Sin voluntarios como Angela, la tarea de cuidar a tantos animales sería imposible',
+            content: ' Ángela, una mujer con una energía inagotable, es un claro ejemplo de estos héroes anónimos. Viene al refugio cinco días a la semana, sin falta. Conoce a cada gato por su nombre y su historia, y es experta en sacar un ronroneo incluso al más arisco. Pasa horas acariciando a los gatos más tímidos para ayudarles a superar su miedo, y se encarga de administrar medicamentos a aquellos que lo necesitan. Su dedicación es inmensurable.Sin voluntarios como Ángela, la tarea de cuidar a tantos animales sería imposible',
             imageUrl: Angela,
         },
         {

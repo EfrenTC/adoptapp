@@ -9,7 +9,7 @@ describe('Historias', () => {
   test('renderiza todos los títulos de historias', () => {
     render(<Historias />);
 
-    // Verifica que los 4 títulos estén presentes en el documento
+
     expect(screen.getByText('AdoptApp: Pasillos llenos de sonrisas')).toBeInTheDocument();
     expect(screen.getByText('Voluntarios: Héroes anónimos')).toBeInTheDocument();
     expect(screen.getByText('2024: Un año récord para las adopciones')).toBeInTheDocument();

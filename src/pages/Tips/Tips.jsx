@@ -3,7 +3,7 @@ import CardTip from '../../components/CardTip/CardTip';
 import "./Tips.css";
 import '../../components/CardTip/CardTip.css';
 
-// Importar solo los assets utilizados en el array de tips.
+
 import gatoMaleta from '../../assets/img/Gato-maleta.png';
 import gatoComida from '../../assets/img/gato-comida.png';
 import gatoMuebles from '../../assets/img/gato-muebles.png';
@@ -11,7 +11,7 @@ import gatoJuguete from '../../assets/img/gato-juguete.png';
 
 import { useTranslation } from 'react-i18next'; 
 
-// Array de tips con claves de traducción
+
 const tipsData = [
     {
         id: 'viaje', 
