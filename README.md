@@ -1,6 +1,6 @@
 # 🐱 Adopta un Gatito
 
-**Adopta un Gatito** es una aplicación web interactiva desarrollada con **React.js** que permite a los usuarios explorar y "adoptar" adorables gatitos. La aplicación utiliza una API externa para mostrar imágenes dinámicas dentro de un slider intuitivo, ofreciendo una experiencia atractiva y amigable.
+**AdoptApp** es una aplicación web interactiva desarrollada con **React.js** que permite a los usuarios explorar y "adoptar" adorables gatitos. La aplicación utiliza una API externa para mostrar imágenes dinámicas dentro de un slider intuitivo, ofreciendo una experiencia atractiva y amigable.
 
 ## 🚀 Funcionalidades principales
 
