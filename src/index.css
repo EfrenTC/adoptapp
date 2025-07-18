@@ -1,4 +1,4 @@
-/* index.css limpio */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -23,7 +23,7 @@ body.light {
   --container-bg: #f9fafb;
 }
 
-/* --- Tema oscuro --- */
+
 body.dark {
   --bg-color: #1a2634;
   --text-color: #e0e0e0;
@@ -34,7 +34,7 @@ body.dark {
   --container-bg: #2d3a4f;
 }
 
-/* Aplica las variables */
+
 body {
   background-color: var(--bg-color);
   color: var(--text-color);
