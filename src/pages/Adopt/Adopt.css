@@ -104,14 +104,14 @@
 }
 
 .adopt-form__button:hover {
-    background-color: #2980b9;
+    background-color: #1d3557;
     transform: translateY(-3px); 
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); 
 }
 
 .adopt-form__button:active {
     transform: translateY(0);
-    background-color: #2471a3;
+    background-color: #294b7a;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
@@ -119,14 +119,16 @@
 .adopt-form__message {
     margin-top: 30px;
     padding: 20px;
-    background-color: #d4edda;
-    border: 1px solid #c3e6cb;
+    background-color: #85f09e;
+    color: #243447;
+    border: 1px;
     border-radius: 8px;
     text-align: center;
     font-size: 1.1em;
     font-weight: 500;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
     animation: fadeInScale 0.4s ease-out;
+    margin-bottom: 20px;
 }
 
 @keyframes fadeInScale {
